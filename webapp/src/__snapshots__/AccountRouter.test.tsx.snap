@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountRouter should render properly 1`] = `
+<BrowserRouter>
+  <Header />
+  <HelmetWrapper
+    defaultTitle="uSchedule"
+    defer={true}
+    encodeSpecialCharacters={true}
+    titleTemplate="%s | uSchedule"
+  />
+  <ToastContainer
+    autoClose={6500}
+    closeButton={[Function]}
+    closeOnClick={false}
+    draggable={false}
+    draggableDirection="x"
+    draggablePercent={80}
+    hideProgressBar={false}
+    newestOnTop={false}
+    pauseOnFocusLoss={true}
+    pauseOnHover={true}
+    position="top-right"
+    role="alert"
+    theme="light"
+    transition={[Function]}
+  />
+  <Routes>
+    <Route
+      element={<Scheduler />}
+      path="/"
+    />
+    <Route
+      element={<Info />}
+      path="info"
+    />
+    <Route
+      element={<Privacy />}
+      path="privacy"
+    />
+    <Route
+      element={<Feedback />}
+      path="feedback"
+    />
+    <Route
+      element={<React.Fragment />}
+      path="sojourner"
+    />
+    <Route
+      element={
+        <ProtectedRoute>
+          <AccountRouter />
+        </ProtectedRoute>
+      }
+      path="account/*"
+    />
+    <Route
+      element={
+        <ProtectedRoute>
+          <UsersRouter />
+        </ProtectedRoute>
+      }
+      path="users/*"
+    />
+    <Route
+      element={<AccountWithEmailExists />}
+      path="messages/auth/email_exists"
+    />
+    <Route
+      element={<ServerError />}
+      path="messages/500"
+    />
+    <Route
+      element={<NotFound />}
+      path="*"
+    />
+  </Routes>
+  <Footer />
+</BrowserRouter>
+`;

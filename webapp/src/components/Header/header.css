@@ -1,0 +1,142 @@
+body {
+  margin-top: 72px; /* 56px for header + 16px for content padding */
+}
+
+.main-nav .control-icon {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+[data-theme='dark'] .main-nav .control-icon {
+  color: #f50057;
+}
+
+[data-theme='dark'] .main-nav .control-icon #btn-sign-in {
+  color: #f50057;
+  border-color: #f50057;
+}
+
+[data-theme='dark'] .main-nav .control-icon .loading-spinner {
+  border-color: #f50057;
+  border-right-color: transparent;
+}
+
+[data-theme='dark'] .main-nav .control-icon #btn-sign-in:hover {
+  color: var(--dark);
+  background-color: #f50057;
+}
+
+/* First, show only the icon */
+.main-nav .site-icon {
+  display: inline;
+}
+.main-nav .site-title {
+  display: none;
+}
+
+/* Then show only uSchedule */
+@media (min-width: 380px) {
+  .main-nav .site-icon {
+    display: none;
+  }
+  .main-nav .site-title {
+    display: inline;
+  }
+  .main-nav .site-title .domain-suffix {
+    display: none;
+  }
+}
+
+/* Then show only uSchedule.me */
+@media (min-width: 420px) {
+  .main-nav .site-title .domain-suffix {
+    display: inline;
+  }
+}
+
+/* Then show only uSchedule.me with the icon */
+@media (min-width: 445px) {
+  .main-nav .site-icon {
+    display: inline;
+  }
+}
+
+.menu-icon {
+  border: 0;
+  margin-top: 1px;
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  width: 45px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+}
+
+.menu-icon .sub-icon {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+}
+
+.menu-icon .top-left,
+.menu-icon .top-right {
+  top: 2px;
+  transition: transform 0.35s ease-in-out;
+}
+.menu-icon .middle-left,
+.menu-icon .middle-right {
+  top: 11px;
+  transition-property: left, width, opacity;
+  transition: 0.35s ease-in-out;
+  opacity: 1;
+  width: 14px;
+  overflow: hidden;
+}
+.menu-icon .bottom-left,
+.menu-icon .bottom-right {
+  top: 20px;
+  transition: transform 0.35s ease-in-out;
+}
+
+.menu-icon .top-right,
+.menu-icon .middle-right,
+.menu-icon .bottom-right {
+  left: 21px;
+}
+
+.menu-icon.active .top-left {
+  transition: transform 0.35s ease-in-out;
+  transform: translateX(4px) translateY(6px) rotate(45deg);
+}
+.menu-icon.active .top-right {
+  transition: transform 0.35s ease-in-out;
+  transform: translateX(-3px) translateY(6px) rotate(-45deg);
+}
+.menu-icon.active .middle-left {
+  transition-property: left, width, opacity;
+  transition: 0.35s ease-in-out;
+  left: 22px;
+  width: 0;
+  opacity: 0;
+}
+.menu-icon.active .middle-right {
+  transition-property: width, opacity;
+  transition: 0.35s ease-in-out;
+  width: 0;
+  opacity: 0;
+}
+.menu-icon.active .bottom-left {
+  transition: transform 0.35s ease-in-out;
+  transform: translateX(4px) translateY(-6px) rotate(-45deg);
+}
+.menu-icon.active .bottom-right {
+  transition: transform 0.35s ease-in-out;
+  transform: translateX(-3px) translateY(-6px) rotate(45deg);
+}
+
+.donate-banner {
+  margin-top: -0.9rem;
+}

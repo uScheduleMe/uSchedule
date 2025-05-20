@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageTitle should render properly 1`] = `
+<Fragment>
+  <HelmetWrapper
+    defer={true}
+    encodeSpecialCharacters={true}
+  >
+    <title>
+      Test
+    </title>
+  </HelmetWrapper>
+  <h1
+    className="h2 pt-2 pb-3"
+  >
+    Test
+  </h1>
+</Fragment>
+`;

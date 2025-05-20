@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignInError should render properly 1`] = `
+<Container
+  fluid={false}
+>
+  <PageTitle
+    headTitle="account:sign_in_failed-translated"
+  >
+    account:sign_in_failed-translated
+  </PageTitle>
+  <p>
+    <img
+      alt="common:uschedule_logo-translated"
+      src="logo96x96.png"
+    />
+  </p>
+  <ForwardRef(renderIconAlert)
+    className="mb-4"
+    variant="danger"
+  >
+    account:error.try_signin_with_other_provider-translated
+  </ForwardRef(renderIconAlert)>
+  <SignInOptions
+    className="mb-4"
+    providers={
+      Array [
+        "google",
+      ]
+    }
+  />
+</Container>
+`;

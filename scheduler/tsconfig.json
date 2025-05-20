@@ -1,0 +1,40 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": false,
+    "baseUrl": "./src",
+    "downlevelIteration": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2020", "DOM"],
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "noEmit": false,
+    "noImplicitAny": true,
+    "outDir": "dist",
+    "paths": {
+      "@courses": ["courses/."],
+      "@courses/*": ["courses/*"],
+      "@id_providers": ["id_providers/."],
+      "@id_providers/*": ["id_providers/*"],
+      "@modules/*": ["modules/*"],
+      "@route_handlers/*": ["route_handlers/*"],
+      "@routers/*": ["routers/*"],
+      "@schedules": ["schedules/."],
+      "@schedules/*": ["schedules/*"],
+      "@services/*": ["services/*"],
+      "@utils/*": ["utils/*"],
+      "@workers/*": ["workers/*"],
+      "@src/*": ["*"]
+    },
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "strict": true,
+    "target": "es2020",
+    "typeRoots": ["./types", "./node_modules/@types"]
+  },
+  "include": ["src/**/*"]
+}

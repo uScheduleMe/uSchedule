@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotFound should render properly 1`] = `
+<Container
+  fluid={false}
+>
+  <PageTitle
+    headTitle="not_found:page_not_found-translated"
+  >
+    not_found:page_not_found-translated
+  </PageTitle>
+  <p>
+    <img
+      alt="common:uschedule_logo-translated"
+      src="logo96x96.png"
+    />
+  </p>
+  <ForwardRef(renderIconAlert)
+    variant="warning"
+  >
+    not_found:oops-translated
+  </ForwardRef(renderIconAlert)>
+  <p>
+    not_found:looking_for-translated
+    <br />
+    <Button
+      active={false}
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Link",
+          "render": [Function],
+        }
+      }
+      className="mt-3"
+      disabled={false}
+      to="/"
+      variant="outline-info"
+    >
+      common:schedule_builder-translated
+    </Button>
+  </p>
+</Container>
+`;

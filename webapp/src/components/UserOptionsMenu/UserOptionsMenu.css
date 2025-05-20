@@ -1,0 +1,19 @@
+.user-options-container .user-summary {
+  max-width: 14rem;
+}
+
+.user-options-container .user-summary .user-image-container {
+  font-size: 2.75rem;
+}
+
+[data-theme='light'] .user-options-container .dropdown-item:hover {
+  background-color: #e2e2e2;
+}
+
+.user-options-container .dropdown-divider {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+[data-theme='dark'] .user-options-container .dropdown-divider {
+  border-color: var(--gray);
+}

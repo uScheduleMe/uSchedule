@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotAuthorized should render properly 1`] = `
+<Container
+  fluid={false}
+>
+  <PageTitle
+    headTitle="not_authorized:access_denied-translated"
+  >
+    not_authorized:access_denied-translated
+  </PageTitle>
+  <p>
+    <img
+      alt="common:uschedule_logo-translated"
+      src="logo96x96.png"
+    />
+  </p>
+  <ForwardRef(renderIconAlert)
+    className="mb-4"
+    icon={
+      Object {
+        "icon": Array [
+          512,
+          512,
+          Array [
+            129306,
+            9995,
+            "hand-paper",
+          ],
+          "f256",
+          "M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V240c0 8.8-7.2 16-16 16s-16-7.2-16-16V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V336c0 1.5 0 3.1 .1 4.6L67.6 283c-16-15.2-41.3-14.6-56.6 1.4s-14.6 41.3 1.4 56.6L124.8 448c43.1 41.1 100.4 64 160 64H304c97.2 0 176-78.8 176-176V128c0-17.7-14.3-32-32-32s-32 14.3-32 32V240c0 8.8-7.2 16-16 16s-16-7.2-16-16V64c0-17.7-14.3-32-32-32s-32 14.3-32 32V240c0 8.8-7.2 16-16 16s-16-7.2-16-16V32z",
+        ],
+        "iconName": "hand",
+        "prefix": "fas",
+      }
+    }
+    variant="danger"
+  >
+    not_authorized:oops-translated
+  </ForwardRef(renderIconAlert)>
+  <p
+    className="mb-5"
+  >
+    not_authorized:looking_for-translated
+    <br />
+    <Button
+      active={false}
+      as={
+        Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "displayName": "Link",
+          "render": [Function],
+        }
+      }
+      className="mt-3"
+      disabled={false}
+      to="/"
+      variant="outline-info"
+    >
+      common:schedule_builder-translated
+    </Button>
+  </p>
+  <SignInOptions
+    className="mb-4"
+  />
+</Container>
+`;

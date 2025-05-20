@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OptionsDropdown should render properly 1`] = `
+<div>
+  <OverlayTrigger
+    container={
+      Object {
+        "current": null,
+      }
+    }
+    defaultShow={false}
+    onToggle={[Function]}
+    overlay={
+      <ForwardRef
+        id="selection-menu"
+        placement="right"
+      >
+        <ForwardRef
+          className="px-0 py-2 shadow"
+        >
+          <DropdownItem
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "displayName": "SafeAnchor",
+                "render": [Function],
+              }
+            }
+            className="menu-option"
+            disabled={false}
+            onClick={[Function]}
+            value="a"
+          >
+            <span
+              style={
+                Object {
+                  "paddingLeft": "0.9375rem",
+                }
+              }
+            >
+              test-a
+            </span>
+          </DropdownItem>
+          <DropdownItem
+            as={
+              Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "displayName": "SafeAnchor",
+                "render": [Function],
+              }
+            }
+            className="menu-option"
+            disabled={false}
+            onClick={[Function]}
+            value="b"
+          >
+            <span
+              style={
+                Object {
+                  "paddingLeft": "0.9375rem",
+                }
+              }
+            >
+              test-b
+            </span>
+          </DropdownItem>
+        </ForwardRef>
+      </ForwardRef>
+    }
+    placement="bottom-end"
+    rootClose={true}
+    show={false}
+    trigger="click"
+  >
+    <Component />
+  </OverlayTrigger>
+</div>
+`;

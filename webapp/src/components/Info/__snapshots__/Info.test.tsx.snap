@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Info should render properly 1`] = `
+<Container
+  fluid={false}
+>
+  <PageTitle
+    headTitle="common:info-translated"
+  >
+    common:info-translated
+  </PageTitle>
+  <p>
+    <img
+      alt="common:uschedule_logo-translated"
+      src="logo96x96.png"
+    />
+  </p>
+  <p>
+    <Trans
+      components={
+        Object {
+          "link_uottawa": <a
+            href="https://uottawa.ca"
+            rel="noopener noreferrer"
+            target="_blank"
+          />,
+        }
+      }
+      i18nKey="info:purpose_description"
+      t={[Function]}
+    />
+  </p>
+  <p>
+    info:functionality_description-translated
+  </p>
+  <p>
+    <Trans
+      components={
+        Object {
+          "link_feedback": <Link
+            to="/feedback"
+          />,
+        }
+      }
+      i18nKey="info:contact_info"
+      t={[Function]}
+    />
+  </p>
+  <p>
+    info:github_org-translated
+    : 
+    <a
+      href="https://github.com/uScheduleMe"
+      rel="noreferrer"
+      target="_blank"
+    >
+      https://github.com/uScheduleMe
+    </a>
+  </p>
+  <p>
+    info:contributors-translated
+    :
+    <ul>
+      <li
+        key="contributor-David Dearden"
+      >
+        David Dearden
+      </li>
+      <li
+        key="contributor-Andrew Nagarajah"
+      >
+        Andrew Nagarajah
+      </li>
+      <li
+        key="contributor-Jon Bastien"
+      >
+        Jon Bastien
+      </li>
+      <li
+        key="contributor-Ivana Erlich"
+      >
+        Ivana Erlich
+      </li>
+      <li
+        key="contributor-Sahil Tara"
+      >
+        Sahil Tara
+      </li>
+      <li
+        key="contributor-Hudi Friedman"
+      >
+        Hudi Friedman
+      </li>
+      <li
+        key="contributor-Natalia Maximo"
+      >
+        Natalia Maximo
+      </li>
+    </ul>
+  </p>
+  <p>
+    info:libraries_used-translated
+    :
+    <ul>
+      <li
+        key="library-Bootstrap"
+      >
+        <a
+          href="https://getbootstrap.com"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Bootstrap
+        </a>
+      </li>
+      <li
+        key="library-React"
+      >
+        <a
+          href="https://reactjs.org/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          React
+        </a>
+      </li>
+      <li
+        key="library-Font Awesome"
+      >
+        <a
+          href="https://fontawesome.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Font Awesome
+        </a>
+      </li>
+    </ul>
+  </p>
+</Container>
+`;

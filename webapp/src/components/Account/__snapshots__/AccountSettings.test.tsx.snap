@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountSettings should render properly 1`] = `
+<Container
+  fluid={false}
+>
+  <PageTitle
+    headTitle="account:account_settings-translated"
+  >
+    account:account_settings-translated
+  </PageTitle>
+  <Component />
+</Container>
+`;

@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SaveScheduleModal should render properly 1`] = `
+<Modal
+  animation={true}
+  aria-labelledby="save-schedule-modal"
+  autoFocus={true}
+  backdrop={true}
+  centered={true}
+  dialogAs={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "displayName": "ModalDialog",
+      "render": [Function],
+    }
+  }
+  enforceFocus={true}
+  keyboard={true}
+  onHide={[Function]}
+  restoreFocus={true}
+  show={false}
+>
+  <ModalHeader
+    closeButton={true}
+    closeLabel="Close"
+  >
+    <ModalTitle
+      as="h5"
+      id="save-schedule-modal"
+    >
+      scheduler:save_schedule-translated
+    </ModalTitle>
+  </ModalHeader>
+  <ModalBody>
+    <p>
+      terms:term_title-translated
+    </p>
+    <Form
+      inline={false}
+      onSubmit={[Function]}
+    >
+      <FormGroup
+        controlId="schedule-save-name"
+      >
+        <FormLabel
+          column={false}
+          srOnly={false}
+        >
+          scheduler:schedule_name_optional-translated
+          :
+        </FormLabel>
+        <FormControl
+          data-cy="txt:schedule-name"
+          maxLength={128}
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </FormGroup>
+    </Form>
+  </ModalBody>
+  <ModalFooter>
+    <Button
+      active={false}
+      data-cy="clk:save-calendar"
+      disabled={false}
+      onClick={[Function]}
+      variant="primary"
+    >
+      <FontAwesomeIcon
+        beat={false}
+        beatFade={false}
+        border={false}
+        bounce={false}
+        className="mr-2"
+        fade={false}
+        fixedWidth={false}
+        flip={false}
+        icon={
+          Object {
+            "icon": Array [
+              448,
+              512,
+              Array [
+                "calendar-alt",
+              ],
+              "f073",
+              "M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z",
+            ],
+            "iconName": "calendar-days",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        maskId={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        shake={false}
+        size={null}
+        spin={false}
+        spinPulse={false}
+        spinReverse={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        titleId={null}
+        transform={null}
+      />
+      scheduler:save_to_calendar-translated
+    </Button>
+    <Button
+      active={false}
+      data-cy="clk:save-draft"
+      disabled={false}
+      onClick={[Function]}
+      variant="primary"
+    >
+      <FontAwesomeIcon
+        beat={false}
+        beatFade={false}
+        border={false}
+        bounce={false}
+        className="mr-2"
+        fade={false}
+        fixedWidth={false}
+        flip={false}
+        icon={
+          Object {
+            "icon": Array [
+              448,
+              512,
+              Array [
+                128197,
+                128198,
+              ],
+              "f133",
+              "M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z",
+            ],
+            "iconName": "calendar",
+            "prefix": "far",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        maskId={null}
+        pull={null}
+        pulse={false}
+        rotation={null}
+        shake={false}
+        size={null}
+        spin={false}
+        spinPulse={false}
+        spinReverse={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        titleId={null}
+        transform={null}
+      />
+      scheduler:save_draft-translated
+    </Button>
+  </ModalFooter>
+</Modal>
+`;

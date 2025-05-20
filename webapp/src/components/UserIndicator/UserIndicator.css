@@ -1,0 +1,8 @@
+.user-indicator .loading-spinner {
+  height: 1.625rem;
+  width: 1.625rem;
+  font-size: 1.125rem;
+  margin-bottom: 0.1875rem;
+  border-color: inherit;
+  border-right-color: transparent;
+}

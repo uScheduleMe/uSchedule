@@ -1,0 +1,358 @@
+{
+  "account": {
+    "account_settings": "Account Settings",
+    "attempt_user": "Attempting to load the logged in user",
+    "connected_account": "Connected Account",
+    "connected_account|plural": "Connected Accounts",
+    "delete_account": "Delete Account",
+    "delete_account_confirmation_prompt": "Are you sure you want to delete your account? If you do, any data saved in the account will also be deleted, including any saved schedules. This cannot be undone.",
+    "delete_account_explanation": "If you delete your account, any data saved in the account will also be deleted, including any saved schedules. This cannot be undone.",
+    "error": {
+      "delete_account_failed": "Sorry, something went wrong while deleting your account. Please try again later or contact us if this keeps happening.",
+      "family_name_required": "A family name is required",
+      "get_signed_in_user": "There was a problem loading the logged in user.",
+      "given_name_required": "A given name is required",
+      "profile_save": "Sorry, we were unable to save your changes. Please try again later.",
+      "schedule_save": "Sorry, we were unable to save your schedule. Please try again later.",
+      "session_expired": "You are no longer signed in. Your session may have expired or you signed out in another window.",
+      "shared_users": "There was an error getting the list of users who've shared with you. Please try again later.",
+      "sign_out": "There was a problem signing out of your account. Please try again later or sign out manually by removing all the cookies for this site.",
+      "try_signin_with_other_provider": "Your email address is linked to a uSchedule account with a different sign in provider. Click on the sign in button below to sign in to that account."
+    },
+    "family_name": "Family Name",
+    "given_name": "Given Name",
+    "no_shares_yet": "Nobody has shared their calendar with you yet. Ask your friends to share their calendars using your account email address.",
+    "shared_with_me": "Shared With Me",
+    "sign_in": "Sign In",
+    "sign_in_failed": "Sign In Failed",
+    "sign_in_with": "Sign in with {{provider}}",
+    "sign_out": "Sign Out",
+    "success": {
+      "delete_account": "Your account was successfully deleted.",
+      "profile_saved": "Your profile has been saved.",
+      "schedule_saved": "Your schedule has been saved."
+    },
+    "user_profile": "User Profile",
+    "view_calendar": "View Calendar"
+  },
+  "api_message": {
+    "unknown": ""
+  },
+  "common": {
+    "accreditation": "Accreditation",
+    "activity": "Activity",
+    "auto": "Auto",
+    "calendar": "Calendar",
+    "cancel": "Cancel",
+    "closed": "Closed",
+    "confirm": "Confirm",
+    "conflicts": "Conflicts",
+    "course": "Course",
+    "courses": "Courses",
+    "csv": "CSV File",
+    "danger": "Danger",
+    "delete": "Delete",
+    "donate": "Donate",
+    "download": "Download",
+    "draft": "Draft",
+    "edit": "Edit",
+    "end": "End",
+    "error": {
+      "fetch_data": "Unable to get the requested data. Check your internet connection and try again.",
+      "get_environment": "There was a problem loading some features.",
+      "http_request_no_response": "Your request could not be completed. Check your internet connection and try again.",
+      "http_request_unexpected": "An unexpected error occurred and your request could not be completed. Please try again later."
+    },
+    "feedback": "Feedback",
+    "filters": "Filters",
+    "hide": "Hide",
+    "hour12": "12 Hour",
+    "hour24": "24 Hour",
+    "ical": "iCal File",
+    "info": "Info",
+    "json": "JSON File",
+    "legacy": "Legacy",
+    "loading": "Loading...",
+    "mandatory": "Mandatory",
+    "message": "Message",
+    "new": "New",
+    "of": "of",
+    "open": "Open",
+    "optional": "Optional",
+    "options": "Options",
+    "privacy": "Privacy",
+    "prof": "Prof",
+    "profile": "Profile",
+    "remove": "Remove",
+    "room": "Room",
+    "save": "Save",
+    "sched": "Sched",
+    "schedule": "Schedule",
+    "schedule_builder": "Schedule Builder",
+    "schedules": "Schedules",
+    "school": "School",
+    "searching": "Searching",
+    "section": "Section",
+    "send": "Send",
+    "sending": "Sending...",
+    "settings": "Settings",
+    "share": "Share",
+    "show": "Show",
+    "start": "Start",
+    "status": "Status",
+    "subject": "Subject",
+    "term": "Term",
+    "uschedule_logo": "uSchedule Logo"
+  },
+  "donate": {
+    "banner_info": "uSchedule is funded and operated completely by volunteers. You can help us pay the bills to keep uSchedule running as long as possible.",
+    "banner_title": "Keep uSchedule running!"
+  },
+  "feedback": {
+    "email_address": "Email Address",
+    "error": {
+      "message_required": "A message is required",
+      "message_sent_fail": "The email failed to send. Please try again later.",
+      "recaptcha_required": "Please confirm you are not a robot",
+      "subject_required": "A subject is required"
+    },
+    "first_and_last": "First and Last Name",
+    "report_bug": "Want to report a bug or leave a comment? You've come to the right place!",
+    "success": {
+      "message_sent": "Thank you! Your message was sent successfully."
+    }
+  },
+  "info": {
+    "contact_info": "If you would like to report a bug or inquire about how to contribute, please send us a message using the <link_feedback>Feedback Form</link_feedback>.",
+    "contributors": "Contributors",
+    "functionality_description": "Courses can be added to a list by entering the subject and course number. Then uSchedule will download the timetable data from the school website and figure out all possible class combinations which do not have time conflicts. Some filters can be applied to optimize the schedule and reduce the number of possible class combinations.",
+    "github_org": "GitHub Organization",
+    "libraries_used": "Libraries Used",
+    "purpose_description": "uSchedule is a tool built to simplify the process of designing a class schedule for the <link_uottawa>$t(schools:uottawa)</link_uottawa> (uOttawa) in Ontario, Canada. uSchedule is not affiliated with the University of Ottawa."
+  },
+  "not_authorized": {
+    "access_denied": "Access Denied",
+    "looking_for": "You can sign-in below, or visit the Schedule Builder page instead.",
+    "oops": "Oops! You don't have permission to view the requested page."
+  },
+  "not_found": {
+    "looking_for": "You were probably looking for the Schedule Builder.",
+    "oops": "Oops! The page you were looking for does not exist.",
+    "page_not_found": "404 - Page Not Found"
+  },
+  "privacy": {
+    "business_disclosure": "If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.",
+    "business_disclosure_title": "Business Transactions",
+    "changes": "We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page. We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the \"Last updated\" date at the top of this Privacy Policy. You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.",
+    "changes_title": "Changes to this Privacy Policy",
+    "child_privacy": "Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers. If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.",
+    "child_privacy_title": "Children's Privacy",
+    "contact": "If you have any questions about this Privacy Policy, You can contact us by the <link_feedback>feedback form</link_feedback> on our website",
+    "contact_title": "Contact Us",
+    "cookies_items": {
+      "essential": "<strong>Necessary / Essential Cookies</strong><br><strong>Type:</strong> Session Cookies<br><strong>Administered by:</strong> Us<br><strong>Purpose</strong>: These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.",
+      "functional": "<strong>Functionality Cookies</strong><br><strong>Type:</strong> Persistent Cookies<br><strong>Administered by:</strong> Us<br><strong>Purpose:</strong> These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website."
+    },
+    "cookies_items_intro": "Cookies can be \"Persistent\" or \"Session\" Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies: <link_cookies>What Are Cookies?</link_cookies>",
+    "cookies_items_title": "We use both Session and Persistent Cookies for the purposes set out below:",
+    "cookies_outro": "For more information about the cookies we use and your choices regarding cookies, please visit our Cookies Policy or the Cookies section of our Privacy Policy.",
+    "cookies_title": "Tracking Technologies and Cookies",
+    "cookies_types": {
+      "browser_cookies": "Cookies or Browser Cookies. A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service; for example, this includes, but is not limited to user accounts.  Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.",
+      "web_beacons": "Web Beacons. Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity)."
+    },
+    "cookies_types_intro": "We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:",
+    "data_collection_title": "Collecting and Using Your Personal Data",
+    "data_deletion": "If you require the deletion of your personal data, go to your account settings page using the account menu in the top-right corner of the screen. Then, click the 'Delete Account' button and click 'Delete' on the confirmation popup. This will immediately delete your account and all associated data.  Note: Once triggered, this action cannot be reversed.",
+    "data_deletion_title": "How to Delete Your Personal Data",
+    "data_disclosure_title": "Disclosure of Your Personal Data",
+    "data_retention": "The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies. The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.",
+    "data_retention_title": "Retention of Your Personal Data",
+    "data_security": "The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.",
+    "data_security_title": "Security of Your Personal Data",
+    "data_transfer": "Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction. Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer. The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.",
+    "data_transfer_title": "Transfer of Your Personal Data",
+    "data_types_title": "Types of Data Collected",
+    "data_use_intro": "The Company may use Personal Data for the following purposes:",
+    "data_use_items": [
+      "To provide and maintain our Service, including to monitor the usage of our Service.",
+      "To manage Your Account: to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.",
+      "To contact You: To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.",
+      "To provide You with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.",
+      "To manage Your requests: To attend and manage Your requests to Us.",
+      "For business transfers: We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.",
+      "For other purposes: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience."
+    ],
+    "data_use_title": "Use of Your Personal Data",
+    "definitions": {
+      "account": "\"Account\" means a unique account created for You to access our Service or parts of our Service.",
+      "company": "\"Company\" (referred to as either \"the Company\", \"We\", \"Us\" or \"Our\" in this Agreement) refers to uSchedule.",
+      "cookies": "\"Cookies\" are small files that are placed on Your computer, mobile device or any other device by a website, which may contain the details of Your browsing history on that website among its many uses.  Examples include, but are not limited to, your choice of preferred language or which user may be logged in to the site.",
+      "device": "\"Device\" means any device that can access the Service such as a computer, or a mobile device, including, but not limited to a cellphone or a digital tablet.",
+      "personal_data": "\"Personal Data\" is any information that relates to an identified or identifiable individual.",
+      "service": "\"Service\" refers to the Website.",
+      "service_provider": "\"Service Provider\" means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.",
+      "third_party_social_media": "\"Third-party Social Media Service\" refers to any website or any social network through which a User can log in or create an account to use the Service.",
+      "usage_data": "\"Usage Data\" refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).",
+      "website": "\"Website\" refers to uSchedule, accessible from uschedule.me",
+      "you": "\"You\" means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable."
+    },
+    "definitions_intro": "For the purposes of this Privacy Policy:",
+    "definitions_title": "Definitions",
+    "interpretation": "The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.",
+    "interpretation_and_definitions_title": "Interpretation and Definitions",
+    "interpretation_title": "Interpretation",
+    "intro_description": "This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <link_generator>Privacy Policy Generator</link_generator>.",
+    "last_updated": "Last updated: {{date}}",
+    "law_enforcement": "Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).",
+    "law_enforcement_title": "Law enforcement",
+    "legal_requirements": {
+      "defend_company_rights": "Protect and defend the rights or property of the Company",
+      "investigate_wrongdoing": "Prevent or investigate possible wrongdoing in connection with the Service",
+      "legal_obligation": "Comply with a legal obligation",
+      "liability": "Protect against legal liability",
+      "protect_users": "Protect the personal safety of Users of the Service or the public"
+    },
+    "legal_requirements_intro": "The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:",
+    "legal_requirements_title": "Other legal requirements",
+    "outside_links": "Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit. We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.",
+    "outside_links_title": "Links to Other Websites",
+    "page_title": "Privacy Policy",
+    "personal_data_intro": "While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to;",
+    "personal_data_items": {
+      "email": "Email Address",
+      "names": "First name and last name",
+      "usage": "Usage Data"
+    },
+    "personal_data_title": "Personal Data",
+    "share_data_intro": "We may share Your personal information in the following situations:",
+    "share_data_items": [
+      "With Service Providers: We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to contact You.",
+      "For business transfers: We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.",
+      "With business partners: We may share Your information with Our business partners to offer You certain products, services or promotions.",
+      "With other users: when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside. If You interact with other users or register through a Third-Party Social Media Service, Your contacts on the Third-Party Social Media Service may see Your name, profile, pictures and description of Your activity. Similarly, other users will be able to view descriptions of Your activity, communicate with You and view Your profile.",
+      "With Your consent: We may disclose Your personal information for any other purpose with Your consent."
+    ],
+    "third_party_social_media_intro": "The Company allows You to create an account and log in to use the Service through the following Third-party Social Media Services:",
+    "third_party_social_media_items": {
+      "facebook": "Facebook",
+      "google": "Google",
+      "microsoft": "Microsoft"
+    },
+    "third_party_social_media_outro": "If You decide to register through or otherwise grant us access to a Third-Party Social Media Service, We may collect Personal data that is already associated with Your Third-Party Social Media Service's account, such as Your name, Your email address, Your activities or Your contact list associated with that account.",
+    "third_party_social_media_title": "Information from Third-Party Social Media Services",
+    "translation_disclaimer": "If there are any discrepancies in interpretation between any translations of this privacy policy, the English will be considered official.",
+    "usage_data": "Usage Data is collected automatically when using the Service. Usage Data may include information such as the type of mobile device You use, Your Device's Internet Protocol address (i.e. IP address), operating system, browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, information which may uniquely identify your device and other diagnostic data. We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.",
+    "usage_data_title": "Usage Data"
+  },
+  "scheduler": {
+    "add_by_email_placeholder": "Add someone by their email address",
+    "add_course": "Add Course",
+    "already_has_calendar_access": "The account '{{email}}' already has access to this calendar.",
+    "choose_alternate": "Choose an Alternate",
+    "closed_components": "Closed Components",
+    "course_already_listed": "{{subject_code}} {{course_code}} is already in the list",
+    "delete_draft_modal": {
+      "message": "Are you sure you want to delete draft \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })\"? This cannot be undone.",
+      "message|with_name": "Are you sure you want to delete draft \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) – {{name}}\"? This cannot be undone.",
+      "title": "Delete Draft"
+    },
+    "delete_schedule_modal": {
+      "message": "Are you sure you want to delete \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })\"? This cannot be undone.",
+      "message|with_name": "Are you sure you want to delete \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) – {{name}}\"? This cannot be undone.",
+      "title": "Delete Schedule"
+    },
+    "download_schedule": "Download Schedule",
+    "draft_schedules_title": "Draft Schedules",
+    "edit_schedule_name": "Edit Name",
+    "error": {
+      "change_schedule_name": "Sorry, we were unable to change the schedule name. Please try again later.",
+      "get_available_terms": "There was a problem loading the list of available terms.",
+      "get_calendar": "There was a problem loading the schedules in the calendar.",
+      "get_drafts": "There was a problem loading the draft schedules.",
+      "invalid_email": "Please enter a valid email address.",
+      "move_to_calendar": "Sorry, we were unable to move the schedule to the calendar. Please try again later.",
+      "move_to_drafts": "Sorry, we were unable to move the schedule to drafts. Please try again later.",
+      "no_account_to_share_with": "Sorry, '{{ email }}' doesn't have a uSchedule account yet. Ask them to sign-up, then you can share the calendar with them.",
+      "please_add_course": "Please add a course.",
+      "remove_share": "Sorry, we were unable to move remove the users access to this calendar. Please try again later.",
+      "schedule_delete": "Sorry, we were unable to delete your schedule. Please try again later.",
+      "share_sheet_user_list": "There was a problem loading the list of users that this item is shared with.",
+      "term_is_full": "The $t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) is full. Cannot add more than {{count}} course to a term.",
+      "term_is_full|plural": "The $t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) is full. Cannot add more than {{count}} courses to a term.",
+      "valid_course_code": "Please enter a valid course code.",
+      "valid_subject": "Please enter a valid subject code."
+    },
+    "evening_break": "Evening Break (require a break during these times)",
+    "go_to_schedules": "Go To Schedules",
+    "hide_all": "Hide All",
+    "hide_lecture": "Hide Lecture",
+    "lunch_break": "Lunch break (require a break during these times)",
+    "min_time": "Min. Time",
+    "minimize_after": "Minimize Classes After",
+    "minimize_before": "Minimize Classes Before",
+    "move_to_calendar": "Move to Calendar",
+    "move_to_drafts": "Move to Drafts",
+    "no_drafts_message": "You don't have any saved drafts yet. You can use the save button in the <link_scheduler>schedule generator</link_scheduler> to create some drafts.",
+    "no_schedules_found": "There are no possible schedules that match your configurations. But we can try again showing schedules that have conflicts to help you see what courses are conflicting.",
+    "no_schedules_in_calendar": "This calendar has no schedules.",
+    "no_schedules_in_your_calendar": "You don't have any schedules saved in your calendar. You can use the save button in the <link_scheduler>schedule generator</link_scheduler> to create new ones, or move a draft into your calendar.",
+    "outage_timetable_format": "Unfortunately, due to a change in the uOttawa course timetables web page, we are currently unable to get course data. We are working on adapting to the new format as soon as possible.",
+    "save_draft": "Save as Draft",
+    "save_schedule": "Save Schedule",
+    "save_to_calendar": "Save to Calendar",
+    "schedule_name_optional": "Schedule Name (Optional)",
+    "schedule_uses_different_filters": "This schedule uses different filters than the ones set in the Options tab.",
+    "scheduler_module": {
+      "feedback": "If you notice any bugs or find it slow please let us know through the <link_feedback>Feedback Form</link_feedback>.",
+      "info": "We're trying out a new (hopefully faster) way to generate schedules!",
+      "slow_info": "We're trying out a new scheduler, but it seems to be a bit slow for your schedules",
+      "slow_options_tip": "Note: You can also change this in the Options tab",
+      "switch_back": "Switch Back",
+      "title": "Scheduler Module"
+    },
+    "share_calendar": "Share Calendar",
+    "show_all": "Show All",
+    "show_all_conflicts": "Show All Conflicts",
+    "show_hide_calendar": "Show / Hide Calendar",
+    "success": {
+      "move_to_calendar": "Schedule \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })\" has been moved to the calendar.",
+      "move_to_calendar|with_name": "Schedule \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) – {{name}}\" has been moved to the calendar.",
+      "move_to_drafts": "Schedule \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })\" has been moved to drafts.",
+      "move_to_drafts|with_name": "Schedule \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) – {{name}}\" has been moved to drafts.",
+      "schedule_delete": "Schedule \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })\" has been deleted.",
+      "schedule_delete|with_name": "Schedule \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) – {{name}}\" has been deleted."
+    },
+    "time_conflicts": "Time Conflicts",
+    "time_format": "Time Format",
+    "warning": {
+      "limit_reached": "Some schedules in the $t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) are not displayed because the limit was reached."
+    }
+  },
+  "schools": {
+    "uottawa": "University of Ottawa",
+    "uottawa|with_country": "University of Ottawa, Canada"
+  },
+  "server_error": {
+    "oops": "Oops! Looks like something went wrong on our end. We try to catch and fix these errors as best we can, but if the error persists you can contact us at the feedback page.",
+    "server_error": "500 - Server Error"
+  },
+  "sojourner": {
+    "error": {
+      "search_failure": "Sorry, something went wrong while trying to search. Please try again later or contact us if this keeps happening."
+    },
+    "no_items_found": "No results found",
+    "page_title": "Sojourner",
+    "search_for_items": "Search for a Course or an Accreditation"
+  },
+  "terms": {
+    "fall": "{{year}} Fall Term",
+    "summer": "{{year}} Spring/Summer Term",
+    "term_title": "$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })",
+    "winter": "{{year}} Winter Term"
+  },
+  "theme": {
+    "dark": "Dark",
+    "light": "Light"
+  }
+}

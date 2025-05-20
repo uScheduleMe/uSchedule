@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServerError should render properly 1`] = `
+<Container
+  fluid={false}
+>
+  <PageTitle
+    headTitle="server_error:server_error-translated"
+  >
+    server_error:server_error-translated
+  </PageTitle>
+  <p>
+    <img
+      alt="common:uschedule_logo-translated"
+      src="logo96x96.png"
+    />
+  </p>
+  <ForwardRef(renderIconAlert)
+    variant="danger"
+  >
+    server_error:oops-translated
+  </ForwardRef(renderIconAlert)>
+  <Button
+    active={false}
+    as={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "displayName": "Link",
+        "render": [Function],
+      }
+    }
+    className="mt-3"
+    disabled={false}
+    to="/feedback"
+    variant="outline-info"
+  >
+    common:feedback-translated
+  </Button>
+</Container>
+`;

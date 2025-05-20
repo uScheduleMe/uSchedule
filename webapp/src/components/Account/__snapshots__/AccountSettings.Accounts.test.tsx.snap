@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accounts should render properly 1`] = `
+<Card
+  body={false}
+  className="connected-accounts"
+>
+  <CardHeader
+    as="h4"
+  >
+    account:connected_account-translated
+  </CardHeader>
+  <CardBody
+    className="py-0"
+  >
+    <ListGroup
+      variant="flush"
+    >
+      <ListGroupItem
+        active={false}
+        className="px-0"
+        disabled={false}
+        key="facebook"
+      >
+        <img
+          alt="Facebook"
+          className="mr-3"
+          src="/icon-facebook.svg"
+        />
+        Facebook
+      </ListGroupItem>
+      <ListGroupItem
+        active={false}
+        className="px-0"
+        disabled={false}
+        key="microsoft"
+      >
+        <img
+          alt="Microsoft"
+          className="mr-3"
+          src="/icon-microsoft.svg"
+        />
+        Microsoft
+      </ListGroupItem>
+      <ListGroupItem
+        active={false}
+        className="px-0"
+        disabled={false}
+        key="google"
+      >
+        <img
+          alt="Google"
+          className="mr-3"
+          src="/icon-google.svg"
+        />
+        Google
+      </ListGroupItem>
+    </ListGroup>
+  </CardBody>
+</Card>
+`;

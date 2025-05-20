@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserList should render properly with 1 user 1`] = `
+<ListGroup
+  variant="flush"
+>
+  <ListGroupItem
+    active={false}
+    className="d-flex flex-row align-items-center p-2"
+    disabled={false}
+    key="aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+  >
+    <UserImage
+      className="flex-shrink-0 mr-3"
+      imgSize={72}
+      style={
+        Object {
+          "fontSize": "2.25rem",
+        }
+      }
+      user={
+        User {
+          "emails": Array [
+            Object {
+              "email_address": "test@uschedule.me",
+            },
+          ],
+          "family_name": "uSchedule",
+          "given_name": "Johnny",
+          "providers": Array [
+            Object {
+              "provider": "facebook",
+            },
+            Object {
+              "provider": "microsoft",
+            },
+            Object {
+              "provider": "google",
+            },
+          ],
+          "uuid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+        }
+      }
+    />
+    <div
+      className="break-word flex-fill"
+    >
+      <h6
+        className="mb-0"
+        data-cy="val:user-display-name"
+      >
+        Johnny uSchedule
+      </h6>
+      <span
+        className="text-muted small"
+        data-cy="val:user-email"
+      >
+        test@uschedule.me
+      </span>
+    </div>
+  </ListGroupItem>
+</ListGroup>
+`;
+
+exports[`UserList should render properly with a child component 1`] = `
+<ListGroup
+  variant="flush"
+>
+  <ListGroupItem
+    active={false}
+    className="d-flex flex-row align-items-center p-2"
+    disabled={false}
+    key="aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+  >
+    <UserImage
+      className="flex-shrink-0 mr-3"
+      imgSize={72}
+      style={
+        Object {
+          "fontSize": "2.25rem",
+        }
+      }
+      user={
+        User {
+          "emails": Array [
+            Object {
+              "email_address": "test@uschedule.me",
+            },
+          ],
+          "family_name": "uSchedule",
+          "given_name": "Johnny",
+          "providers": Array [
+            Object {
+              "provider": "facebook",
+            },
+            Object {
+              "provider": "microsoft",
+            },
+            Object {
+              "provider": "google",
+            },
+          ],
+          "uuid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+        }
+      }
+    />
+    <div
+      className="break-word flex-fill"
+    >
+      <h6
+        className="mb-0"
+        data-cy="val:user-display-name"
+      >
+        Johnny uSchedule
+      </h6>
+      <span
+        className="text-muted small"
+        data-cy="val:user-email"
+      >
+        test@uschedule.me
+      </span>
+    </div>
+    <span>
+      Johnny uSchedule
+    </span>
+  </ListGroupItem>
+</ListGroup>
+`;
+
+exports[`UserList should render properly with more than 1 user 1`] = `
+<ListGroup
+  variant="flush"
+>
+  <ListGroupItem
+    active={false}
+    className="d-flex flex-row align-items-center p-2"
+    disabled={false}
+    key="aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+  >
+    <UserImage
+      className="flex-shrink-0 mr-3"
+      imgSize={72}
+      style={
+        Object {
+          "fontSize": "2.25rem",
+        }
+      }
+      user={
+        User {
+          "emails": Array [
+            Object {
+              "email_address": "test@uschedule.me",
+            },
+          ],
+          "family_name": "uSchedule",
+          "given_name": "Johnny",
+          "providers": Array [
+            Object {
+              "provider": "facebook",
+            },
+            Object {
+              "provider": "microsoft",
+            },
+            Object {
+              "provider": "google",
+            },
+          ],
+          "uuid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+        }
+      }
+    />
+    <div
+      className="break-word flex-fill"
+    >
+      <h6
+        className="mb-0"
+        data-cy="val:user-display-name"
+      >
+        Johnny uSchedule
+      </h6>
+      <span
+        className="text-muted small"
+        data-cy="val:user-email"
+      >
+        test@uschedule.me
+      </span>
+    </div>
+  </ListGroupItem>
+  <ListGroupItem
+    active={false}
+    className="d-flex flex-row align-items-center p-2"
+    disabled={false}
+    key="aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+  >
+    <UserImage
+      className="flex-shrink-0 mr-3"
+      imgSize={72}
+      style={
+        Object {
+          "fontSize": "2.25rem",
+        }
+      }
+      user={
+        User {
+          "emails": Array [
+            Object {
+              "email_address": "test@uschedule.me",
+            },
+          ],
+          "family_name": "uSchedule",
+          "given_name": "Johnny",
+          "providers": Array [
+            Object {
+              "provider": "facebook",
+            },
+            Object {
+              "provider": "microsoft",
+            },
+            Object {
+              "provider": "google",
+            },
+          ],
+          "uuid": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+        }
+      }
+    />
+    <div
+      className="break-word flex-fill"
+    >
+      <h6
+        className="mb-0"
+        data-cy="val:user-display-name"
+      >
+        Johnny uSchedule
+      </h6>
+      <span
+        className="text-muted small"
+        data-cy="val:user-email"
+      >
+        test@uschedule.me
+      </span>
+    </div>
+  </ListGroupItem>
+</ListGroup>
+`;
+
+exports[`UserList should render properly with no users 1`] = `
+<ListGroup
+  variant="flush"
+/>
+`;

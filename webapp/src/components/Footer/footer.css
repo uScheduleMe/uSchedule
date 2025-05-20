@@ -1,0 +1,26 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 66px; /* Margin bottom by footer height (50) + page bottom margin (16) */
+}
+#page-footer {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Set the fixed height of the footer here */
+  margin-bottom: 0;
+  padding: 12px 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 575px) {
+  #page-footer {
+    height: 77px; /* Set the fixed height of the footer here for xs screens */
+  }
+  body {
+    margin-bottom: 93px; /* Margin bottom by footer height (77) + bottom margin (16)*/
+  }
+}

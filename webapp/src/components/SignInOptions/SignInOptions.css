@@ -1,0 +1,80 @@
+:root {
+  --apple-grey: #737373;
+  --twitter-blue: #1da1f2;
+  --facebook-blue: #1977f3;
+  --facebook-white: #fefefe;
+  --google-blue: #3780ff;
+  --google-green: #38b137;
+  --google-red: #fa3913;
+  --google-yellow: #fcbd06;
+  --microsoft-red: #f65314;
+  --microsoft-green: #7fbb41;
+  --microsoft-grey: #787878;
+  --microsoft-blue: #00a1f1;
+  --microsoft-yellow: #ffbb00;
+}
+
+.sign-in-options-container {
+  display: inline-block;
+}
+
+.btn-sign-in {
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  /* text-align: center; */
+  text-align: left;
+  box-shadow: 1px 1px 3px 0 #ddd;
+  color: #494949;
+  background-color: #f8f8f8;
+}
+
+/* @media (min-width: 576px) {
+    .btn-sign-in {
+        width: 260px;
+        text-align: left;
+    }
+} */
+
+.btn-sign-in:hover {
+  border-color: #888;
+}
+
+.btn-sign-in .brand-icon {
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+[data-theme='dark'] .btn-sign-in {
+  border-color: #333;
+  box-shadow: 1px 1px 3px 0 #333;
+  color: #ccc;
+  background-color: #222;
+}
+
+/* Facebook */
+.btn-sign-in-facebook:hover {
+  color: var(--facebook-blue);
+  border-color: var(--facebook-blue);
+}
+
+/* Google */
+.btn-sign-in-google:hover {
+  color: var(--google-blue);
+  border-color: var(--google-blue);
+}
+[data-theme='dark'] .btn-sign-in-google:hover {
+  color: var(--google-red);
+  border-color: var(--google-red);
+}
+
+/* Microsoft */
+.btn-sign-in-microsoft:hover {
+  color: var(--microsoft-blue);
+  border-color: var(--microsoft-blue);
+}
+[data-theme='dark'] .btn-sign-in-microsoft:hover {
+  color: var(--microsoft-green);
+  border-color: var(--microsoft-green);
+}

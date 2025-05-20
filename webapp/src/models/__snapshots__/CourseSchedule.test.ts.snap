@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Validate CourseSchedule.getConflicts() should return the conflict data in the proper format 1`] = `
+Array [
+  Object {
+    "id": 753,
+    "sections": Object {
+      "A": Array [
+        "A06-TUT",
+        "A00-LEC-0",
+        "A00-LEC-1",
+        "A02-LAB",
+      ],
+    },
+  },
+  Object {
+    "id": 1562,
+    "sections": Object {
+      "E": Array [
+        "E02-LAB",
+        "E00-LEC-0",
+        "E00-LEC-1",
+      ],
+    },
+  },
+]
+`;

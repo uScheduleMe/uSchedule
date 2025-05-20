@@ -1,0 +1,12 @@
+color: true
+require:
+  - ts-node/register
+  - tsconfig-paths/register
+file:
+  - mocha-pre-test-setup.cjs
+spec:
+  - src/**/*.spec.ts
+
+watch: true
+watch-files:
+  - src/**/*.ts

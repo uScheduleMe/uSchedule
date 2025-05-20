@@ -1,0 +1,7 @@
+.draft-term-schedules-container .schedule-separator {
+  border: 2px dashed #d3d3d3;
+}
+
+[data-theme='dark'] .draft-term-schedules-container .schedule-separator {
+  border: 2px dashed #636363;
+}

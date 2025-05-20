@@ -1,0 +1,12 @@
+node_modules
+build
+dist
+coverage
+config
+.vscode
+
+# Ignore lintable files that are not part of the tconfig project
+/*.js
+/*.cjs
+/*.mjs
+/*.ts

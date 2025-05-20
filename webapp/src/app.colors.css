@@ -1,0 +1,80 @@
+[data-theme='light'] {
+  --placeholder-color: #cdcdcd;
+  --grid-separator: #d9d9d9;
+  --gridline-half-separator: #e2e2e2;
+  --day-title-color: #333333;
+  --time-color: #666666;
+  --course-component-border: #cccccc;
+  --course-component-background: #f7f7f7;
+  --course-component-shadow: #dfdfdf;
+  --course-component-text: #333333;
+  --course-num-1-ribbon-color: #9c1515; /* Burgundy:     9C1515 */
+  --course-num-2-ribbon-color: #00aa00; /* Green:        00AA00 */
+  --course-num-3-ribbon-color: #333fff; /* Blue:         333FFF */
+  --course-num-4-ribbon-color: #ff8000; /* Orange:       FF8000 */
+  --course-num-5-ribbon-color: #c39eff; /* Light-Purple: C39EFF */
+  --course-num-6-ribbon-color: #e5de0c; /* Yellow:       E5DE0C */
+  --course-num-7-ribbon-color: #0cd1f1; /* Light-Blue:   0CD1F1 */
+  --course-num-8-ribbon-color: #8500ff; /* Purple:       8500FF */
+  --course-num-9-ribbon-color: #000000; /* Black:        000000 */
+  --course-num-10-ribbon-color: #888888; /* Grey:        888888 */
+  --course-num-11-ribbon-color: #ffffff; /* White:       FFFFFF */
+  /* Some of the following vars are set to 'initial' for consistency with
+   * the dark mode context, but they are not actually used in the CSS for the light theme */
+  --toastify-info-color: #ffffff;
+  --toastify-info-background-color: #17a2b8;
+  --toastify-success-color: #ffffff;
+  --toastify-success-background-color: #00aa00;
+  --toastify-warning-color: #343a40;
+  --toastify-warning-background-color: #ffc107;
+  --toastify-error-color: #ffffff;
+  --toastify-error-background-color: #dc3545;
+  --toastify-default-color: #333333;
+  --toastify-default-background-color: #e2e2e2;
+  --toastify-dark-color: #cccccc;
+  --toastify-dark-background-color: #343a40;
+  --toastify-default-progress-background-color: #bbbbbb;
+  --toastify-default-close-btn-color: initial;
+  --toastify-default-close-btn-opacity: initial;
+}
+
+[data-theme='dark'] {
+  --placeholder-color: #333333;
+  --grid-separator: #575757;
+  --gridline-half-separator: #404040;
+  --day-title-color: #d3d3d3;
+  --time-color: #dddddd;
+  --course-component-border: #5a5a5a;
+  --course-component-background: #2b2b2b;
+  --course-component-shadow: #343434;
+  --course-component-text: #ffffff;
+  --course-num-1-ribbon-color: #9c1515; /* Burgundy:     9C1515 */
+  --course-num-2-ribbon-color: #00aa00; /* Green:        00AA00 */
+  --course-num-3-ribbon-color: #333fff; /* Blue:         333FFF */
+  --course-num-4-ribbon-color: #ff8000; /* Orange:       FF8000 */
+  --course-num-5-ribbon-color: #c39eff; /* Light-Purple: C39EFF */
+  --course-num-6-ribbon-color: #e5de0c; /* Yellow:       E5DE0C */
+  --course-num-7-ribbon-color: #0cd1f1; /* Light-Blue:   0CD1F1 */
+  --course-num-8-ribbon-color: #8500ff; /* Purple:       8500FF */
+  --course-num-9-ribbon-color: #000000; /* Black:        000000 */
+  --course-num-10-ribbon-color: #888888; /* Grey:         888888 */
+  --course-num-11-ribbon-color: #ffffff; /* White:        FFFFFF */
+  --toastify-info-color: #ffffff;
+  --toastify-info-background-color: #117888;
+  --toastify-success-color: #ffffff;
+  --toastify-success-background-color: #008500;
+  --toastify-warning-color: #272b30;
+  --toastify-warning-background-color: #e6ac00;
+  --toastify-error-color: #ffffff;
+  --toastify-error-background-color: #9c1515;
+  --toastify-default-color: #cccccc;
+  --toastify-default-background-color: #343a40;
+  --toastify-dark-color: #cccccc;
+  --toastify-dark-background-color: #343a40;
+  --toastify-default-progress-background-color: #bb86fc;
+  --toastify-default-close-btn-color: #ffffff;
+  --toastify-default-close-btn-opacity: 0.7;
+  /* The following are only overridden in dark mode */
+  --text-black-85: rgba(0, 0, 0, 0.85);
+  --text-white: #ffffff;
+}

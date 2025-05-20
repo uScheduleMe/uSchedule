@@ -1,0 +1,14 @@
+{% include "header.jinja2" %}
+Priority: {{ priority }}
+
+{% if subject|length -%}
+    uSchedule Maintenance: {{ subject|e }}
+{%- else -%}
+    uSchedule Maintenance
+{%- endif %}
+
+Messages:
+
+{% for message in messages -%}
+{{ message }}
+{% endfor %}

@@ -1,0 +1,251 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShareSheet should render properly 1`] = `
+<Modal
+  animation={true}
+  autoFocus={true}
+  backdrop={true}
+  centered={true}
+  dialogAs={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "displayName": "ModalDialog",
+      "render": [Function],
+    }
+  }
+  enforceFocus={true}
+  keyboard={true}
+  onHide={[Function]}
+  restoreFocus={true}
+  scrollable={true}
+  show={false}
+>
+  <ModalHeader
+    closeButton={true}
+    closeLabel="Close"
+  >
+    <ModalTitle
+      as="h5"
+      id="share-sheet-modal"
+    >
+      common:share-translated
+    </ModalTitle>
+  </ModalHeader>
+  <ModalBody
+    className="flex-shrink-0 pb-2"
+  >
+    <Form
+      inline={false}
+      onSubmit={[Function]}
+    >
+      <FormGroup
+        className="mb-0"
+      >
+        <InputGroup
+          className=""
+        >
+          <FormControl
+            data-cy="txt:share-with-email"
+            disabled={false}
+            isInvalid={false}
+            onChange={[Function]}
+            onKeyUp={[Function]}
+            placeholder="scheduler:add_by_email_placeholder-translated"
+            type="input"
+            value=""
+          />
+          <InputGroupAppend>
+            <Button
+              active={false}
+              data-cy="clk:submit-share-form"
+              disabled={true}
+              onClick={[Function]}
+              variant="primary"
+            >
+              <FontAwesomeIcon
+                beat={false}
+                beatFade={false}
+                border={false}
+                bounce={false}
+                className=""
+                fade={false}
+                fixedWidth={false}
+                flip={false}
+                icon={
+                  Object {
+                    "icon": Array [
+                      448,
+                      512,
+                      Array [
+                        "share-alt",
+                      ],
+                      "f1e0",
+                      "M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z",
+                    ],
+                    "iconName": "share-nodes",
+                    "prefix": "fas",
+                  }
+                }
+                inverse={false}
+                listItem={false}
+                mask={null}
+                maskId={null}
+                pull={null}
+                pulse={false}
+                rotation={null}
+                shake={false}
+                size={null}
+                spin={false}
+                spinPulse={false}
+                spinReverse={false}
+                swapOpacity={false}
+                symbol={false}
+                title=""
+                titleId={null}
+                transform={null}
+              />
+            </Button>
+          </InputGroupAppend>
+        </InputGroup>
+        <Feedback
+          type="invalid"
+        />
+      </FormGroup>
+    </Form>
+  </ModalBody>
+  <ModalBody
+    className="pt-0"
+  >
+    <UserList
+      users={Array []}
+    >
+      <Component />
+    </UserList>
+  </ModalBody>
+</Modal>
+`;
+
+exports[`ShareSheet should render properly with customizable inputs 1`] = `
+<Modal
+  animation={true}
+  autoFocus={true}
+  backdrop={true}
+  centered={true}
+  dialogAs={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "displayName": "ModalDialog",
+      "render": [Function],
+    }
+  }
+  enforceFocus={true}
+  keyboard={true}
+  onHide={[Function]}
+  restoreFocus={true}
+  scrollable={true}
+  show={true}
+>
+  <ModalHeader
+    closeButton={false}
+    closeLabel="Close"
+  >
+    <ModalTitle
+      as="h5"
+      id="share-sheet-modal"
+    >
+      Modal Title
+    </ModalTitle>
+  </ModalHeader>
+  <ModalBody
+    className="flex-shrink-0 pb-2"
+  >
+    <Form
+      inline={false}
+      onSubmit={[Function]}
+    >
+      <FormGroup
+        className="mb-0"
+      >
+        <InputGroup
+          className=""
+        >
+          <FormControl
+            data-cy="txt:share-with-email"
+            disabled={false}
+            isInvalid={false}
+            onChange={[Function]}
+            onKeyUp={[Function]}
+            placeholder="scheduler:add_by_email_placeholder-translated"
+            type="input"
+            value=""
+          />
+          <InputGroupAppend>
+            <Button
+              active={false}
+              data-cy="clk:submit-share-form"
+              disabled={true}
+              onClick={[Function]}
+              variant="primary"
+            >
+              <FontAwesomeIcon
+                beat={false}
+                beatFade={false}
+                border={false}
+                bounce={false}
+                className=""
+                fade={false}
+                fixedWidth={false}
+                flip={false}
+                icon={
+                  Object {
+                    "icon": Array [
+                      448,
+                      512,
+                      Array [
+                        "share-alt",
+                      ],
+                      "f1e0",
+                      "M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z",
+                    ],
+                    "iconName": "share-nodes",
+                    "prefix": "fas",
+                  }
+                }
+                inverse={false}
+                listItem={false}
+                mask={null}
+                maskId={null}
+                pull={null}
+                pulse={false}
+                rotation={null}
+                shake={false}
+                size={null}
+                spin={false}
+                spinPulse={false}
+                spinReverse={false}
+                swapOpacity={false}
+                symbol={false}
+                title=""
+                titleId={null}
+                transform={null}
+              />
+            </Button>
+          </InputGroupAppend>
+        </InputGroup>
+        <Feedback
+          type="invalid"
+        />
+      </FormGroup>
+    </Form>
+  </ModalBody>
+  <ModalBody
+    className="pt-0"
+  >
+    <UserList
+      users={Array []}
+    >
+      <Component />
+    </UserList>
+  </ModalBody>
+</Modal>
+`;

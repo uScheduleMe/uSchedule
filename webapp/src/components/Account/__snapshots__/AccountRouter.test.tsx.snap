@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountRouter should render properly 1`] = `
+<Routes>
+  <Route
+    element={<AccountSettings />}
+    path="settings"
+  />
+  <Route
+    element={<SharedWithMe />}
+    path="shares"
+  />
+  <Route
+    element={<NotFound />}
+    path="*"
+  />
+</Routes>
+`;

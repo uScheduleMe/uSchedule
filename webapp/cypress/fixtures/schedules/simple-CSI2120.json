@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "term": {
+    "season": "winter",
+    "year": 2020
+  },
+  "in_calendar": false,
+  "timetable_components": {
+    "753": {
+      "id": "753",
+      "school": "uottawa",
+      "season": "winter",
+      "year": 2020,
+      "subject_code": "CSI",
+      "course_code": "2120",
+      "sections": {
+        "A": ["A01-LAB", "A06-TUT", "A00-LEC-0", "A00-LEC-1"]
+      }
+    }
+  }
+}

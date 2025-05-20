@@ -1,0 +1,358 @@
+{
+  "account": {
+    "account_settings": "Paramètres du compte",
+    "attempt_user": "Tentative de chargement de l'utilisateur connecté",
+    "connected_account": "Compte connecté",
+    "connected_account|plural": "Comptes connectés",
+    "delete_account": "Supprimer mon compte",
+    "delete_account_confirmation_prompt": "Êtes-vous sûr de vouloir supprimer votre compte? Si vous le faites, toutes les données enregistrées dans le compte seront également supprimées, y compris les horaires enregistrés. Cette suppression ne peut être annulée.",
+    "delete_account_explanation": "Si vous supprimez votre compte, toutes les données enregistrées dans le compte seront également supprimées, y compris les horaires enregistrés. Cette suppression ne peut être annulée.",
+    "error": {
+      "delete_account_failed": "Désolé, un problème est survenu lors de la suppression de votre compte. Veuillez réessayer plus tard ou contactez-nous si cela se reproduit.",
+      "family_name_required": "Un nom de famille est requi",
+      "get_signed_in_user": "Un problème est survenu lors du chargement de l'utilisateur connecté.",
+      "given_name_required": "Un prénom est requi",
+      "profile_save": "Désolé, nous n'avons pas pu enregistrer vos modifications. Veuillez réessayer plus tard.",
+      "schedule_save": "Désolé, nous n'avons pas été en mesure d'enregistrer votre programme. Veuillez réessayer plus tard.",
+      "session_expired": "Vous n'êtes plus connecté. Votre session a peut-être expiré ou vous vous êtes déconnecté dans une autre fenêtre.",
+      "shared_users": "Une erreur s'est produite lors de l'obtention de la liste des utilisateurs qui ont partagé avec vous. Veuillez réessayer plus tard.",
+      "sign_out": "Une erreur s'est produit lors de la déconnexion de votre compte. Veuillez réessayer plus tard ou vous déconnecter manuellement en supprimant tous les cookies de ce site.",
+      "try_signin_with_other_provider": "Votre adresse couriel est liée à un compte uSchedule avec un fournisseur de connexion différent. Cliquez sur le bouton de connexion ci-dessous pour vous connecter à ce compte."
+    },
+    "family_name": "Nom de famille",
+    "given_name": "Prénom",
+    "no_shares_yet": "Personne n'a encore partagé leur calendrier avec vous. Demandez à vos amis de partager leurs calendriers en utilisant l'adresse couriel de votre compte.",
+    "shared_with_me": "Partagé avec moi",
+    "sign_in": "Se connecter",
+    "sign_in_failed": "La connection a échoué",
+    "sign_in_with": "Se connecter avec {{provider}}",
+    "sign_out": "Se déconnecter",
+    "success": {
+      "delete_account": "Votre compte a été supprimé avec succès.",
+      "profile_saved": "Votre profil a été enregistré.",
+      "schedule_saved": "Votre profil a été enregistré."
+    },
+    "user_profile": "Profil d'utilisateur",
+    "view_calendar": "Voir le Calendrier"
+  },
+  "api_message": {
+    "unknown": ""
+  },
+  "common": {
+    "accreditation": "Accréditation",
+    "activity": "Activité",
+    "auto": "Auto",
+    "calendar": "Calendrier",
+    "cancel": "Annuler",
+    "closed": "Fermé",
+    "confirm": "Confirmer",
+    "conflicts": "Conflits",
+    "course": "Cours",
+    "courses": "Cours",
+    "csv": "Fichier CSV",
+    "danger": "Danger",
+    "delete": "Supprimer",
+    "donate": "Faire un don",
+    "download": "Télécharger",
+    "draft": "Brouillon",
+    "edit": "Modifier",
+    "end": "Fin",
+    "error": {
+      "fetch_data": "Incapable d'obtenir les données demandées. Vérifiez votre connexion Internet et réessayez.",
+      "get_environment": "Un problème est survenu lors du chargement de certaines fonctionnalités.",
+      "http_request_no_response": "Votre demande n'a pas pu être complétée. Vérifiez votre connexion Internet et réessayez.",
+      "http_request_unexpected": "Une erreur inattendue s'est produite et votre demande n'a pas pu être traitée. Veuillez réessayer plus tard."
+    },
+    "feedback": "Commentaires",
+    "filters": "Filtres",
+    "hide": "Cacher",
+    "hour12": "12 Heures",
+    "hour24": "24 Heures",
+    "ical": "Fichier iCal",
+    "info": "Info",
+    "json": "Fichier JSON",
+    "legacy": "Ancien",
+    "loading": "Chargeant...",
+    "mandatory": "Obligatoire",
+    "message": "Message",
+    "new": "Nouveau",
+    "of": "de",
+    "open": "Ouvert",
+    "optional": "Facultatif",
+    "options": "Options",
+    "privacy": "Confidentialité",
+    "prof": "Prof",
+    "profile": "Profil",
+    "remove": "Supprimer",
+    "room": "Salle",
+    "save": "Sauvegarder",
+    "sched": "Horaire",
+    "schedule": "Horaire",
+    "schedule_builder": "Constructeur d'horaires",
+    "schedules": "Horaires",
+    "school": "École",
+    "searching": "Recherche",
+    "section": "Section",
+    "send": "Envoyer",
+    "sending": "Envoi en cours...",
+    "settings": "Paramètres",
+    "share": "Partager",
+    "show": "Montrer",
+    "start": "Début:",
+    "status": "Statut",
+    "subject": "Sujet",
+    "term": "Terme",
+    "uschedule_logo": "Logo uSchedule"
+  },
+  "donate": {
+    "banner_info": "uSchedule est entièrement financé et géré par des bénévoles. Vous pouvez nous aider à payer les factures pour que uSchedule continue à fonctionner le plus longtemps possible.",
+    "banner_title": "Maintenir le fonctionnement de uSchedule!"
+  },
+  "feedback": {
+    "email_address": "Adresse couriel",
+    "error": {
+      "message_required": "Un message est requis",
+      "message_sent_fail": "Le couriel n'a pas pu être envoyé. Veuillez réessayer plus tard.",
+      "recaptcha_required": "Veuillez confirmer que vous n'êtes pas un robot",
+      "subject_required": "Un objet est requis"
+    },
+    "first_and_last": "Prénom et nom",
+    "report_bug": "Voulez-vous signaler un bug ou laisser un commentaire? Vous êtes au bon endroit!",
+    "success": {
+      "message_sent": "Merci! Votre message a été envoyé avec succès."
+    }
+  },
+  "info": {
+    "contact_info": "Si vous souhaitez signaler un bogue ou vous renseigner sur la façon de contribuer, veuillez nous envoyer un message en utilisant le <link_feedback>formulaire de commentaires</link_feedback>.",
+    "contributors": "Contributeurs",
+    "functionality_description": "Les cours peuvent être ajoutés à une liste en indiquant la matière et le numéro du cours. Ensuite, uSchedule téléchargera les données relatives à l'horaire sur le site web de l'école et déterminera toutes les combinaisons de cours possibles qui n'ont pas de conflit d'horaire. Certains filtres peuvent être appliqués pour optimiser l'horaire et réduire le nombre de combinaisons de cours possibles.",
+    "github_org": "Organisation de GitHub",
+    "libraries_used": "Bibliothèques utilisées",
+    "purpose_description": "uSchedule est un outil conçu pour simplifier le processus de conception d'un horaire de cours pour <link_uottawa>l'$t(schools:uottawa)</link_uottawa> (uOttawa) en Ontario, Canada. uSchedule n'est pas affilié à l'Université d'Ottawa."
+  },
+  "not_authorized": {
+    "access_denied": "Accès refusé",
+    "looking_for": "Vous pouvez vous connecter ci-dessous ou visiter la page constructeur d'horaire.",
+    "oops": "Oops! Vous n'êtes pas autorisé à voir la page demandée."
+  },
+  "not_found": {
+    "looking_for": "Vous cherchiez probablement le constructeur d'horaires.",
+    "oops": "Oops! La page que vous cherchiez n'existe pas.",
+    "page_not_found": "404 - Page non trouvée"
+  },
+  "privacy": {
+    "business_disclosure": "Si la Compagnie est impliquée dans une fusion, une acquisition ou une vente d'actifs, Vos Données personnelles peuvent être transférées. Nous fournirons un avis avant que Vos Données personnelles ne soient transférées et ne soient soumises à une politique de confidentialité différente.",
+    "business_disclosure_title": "Transactions commerciales",
+    "changes": "Nous pouvons mettre à jour notre police de confidentialité de temps à autre. Nous vous informerons de toute modification en publiant la nouvelle police de confidentialité sur cette page. Nous vous en informerons par courrier électronique et/ou par un avis bien visible sur notre service, avant que la modification n'entre en vigueur et nous mettrons à jour la date de dernière mise à jour en haut de la présente politique de confidentialité. Il vous est conseillé de consulter régulièrement la présente police de confidentialité pour prendre connaissance de toute modification. Les modifications apportées à la présente police de confidentialité prennent effet lorsqu'elles sont publiées sur cette page.",
+    "changes_title": "Modifications de la présente police de confidentialité",
+    "child_privacy": "Notre Service ne s'adresse pas aux personnes âgées de moins de 13 ans. Nous ne collectons pas sciemment d'informations personnellement identifiables auprès de personnes âgées de moins de 13 ans. Si Vous êtes un parent ou un tuteur et que Vous avez connaissance que Votre enfant Nous a fourni des Données personnelles, veuillez Nous contacter. Si Nous nous rendons compte que Nous avons collecté des Données Personnelles auprès d'une personne âgée de moins de 13 ans sans vérification du consentement parental, Nous prenons des mesures pour supprimer ces informations de Nos serveurs. Si Nous devons nous appuyer sur le consentement comme base juridique pour traiter Vos informations et que Votre pays exige le consentement d'un parent, Nous pouvons exiger le consentement de Votre parent avant de collecter et d'utiliser ces informations.",
+    "child_privacy_title": "Vie privée des enfants ",
+    "contact": "Si vous avez des questions sur la présente police de confidentialité, Vous pouvez nous contacter par le <link_feedback>formulaire de retour</link_feedback> sur notre site web.",
+    "contact_title": "Contactez-nous",
+    "cookies_items": {
+      "essential": "<strong>Cookies nécessaires/essentiels</strong><br><strong>Type: </strong>Cookies de session<br><strong>Administrés par: </strong>Nous<br><strong>Objectif:</strong> Ces cookies sont essentiels pour vous fournir les services disponibles sur le site Web et vous permettre d'utiliser certaines de ses fonctionnalités. Ils aident à authentifier les utilisateurs et à prévenir l'utilisation frauduleuse des comptes d'utilisateurs. Sans ces Cookies, les services que Vous avez demandés ne peuvent pas être fournis, et Nous utilisons ces Cookies uniquement pour Vous fournir ces services.",
+      "functional": "<strong>Cookies de fonctionnalité</strong><br><strong>Type: </strong>Cookies persistants<br><strong>Administrés par: </strong>Nous<br><strong>Objectif:</strong> Ces Cookies nous permettent de nous souvenir des choix que Vous faites lorsque Vous utilisez le Site Internet, comme se souvenir de vos données de connexion ou de votre préférence linguistique. L'objectif de ces Cookies est de Vous fournir une expérience plus personnelle et de Vous éviter d'avoir à saisir à nouveau vos préférences chaque fois que Vous utilisez le Site Internet."
+    },
+    "cookies_items_intro": "Les cookies peuvent être des cookies \"persistants\" ou \"de session\". Les cookies persistants restent sur votre ordinateur personnel ou votre appareil mobile lorsque vous vous déconnectez, tandis que les cookies de session sont supprimés dès que vous fermez votre navigateur Web. En savoir plus sur les cookies: <link_cookies>Que sont les cookies ?</link_cookies>",
+    "cookies_items_title": "Nous utilisons à la fois des cookies de session et des cookies persistants aux fins énoncées ci-dessous:",
+    "cookies_outro": "Pour plus d'informations sur les cookies que nous utilisons et vos choix en matière de cookies, veuillez consulter notre politique en matière de cookies ou la section Cookies de notre politique de confidentialité.",
+    "cookies_title": "Technologies de suivi et cookies ",
+    "cookies_types": {
+      "browser_cookies": "Cookies ou témoins de navigateur. Un cookie est un petit fichier placé sur Votre appareil. Vous pouvez demander à Votre navigateur de refuser tous les Cookies ou d'indiquer quand un Cookie est envoyé. Toutefois, si vous n'acceptez pas les cookies, il se peut que vous ne puissiez pas utiliser certaines parties de notre service; par exemple, cela inclut, sans s'y limiter, les comptes d'utilisateur.  À moins que vous n'ayez réglé les paramètres de votre navigateur pour qu'il refuse les cookies, notre service peut utiliser des cookies.",
+      "web_beacons": "Balises Web. Certaines sections de notre Service et de nos courriels peuvent contenir de petits fichiers électroniques connus sous le nom de pixels invisibles (également appelés gifs transparents, balises pixel et gifs à pixel unique) qui permettent à la Compagnie, par exemple, de compter les utilisateurs qui ont visité ces pages ou ouvert un courriel et d'établir d'autres statistiques relatives au site Web (par exemple, enregistrer la popularité d'une certaine section et vérifier l'intégrité du système et du serveur)."
+    },
+    "cookies_types_intro": "Nous utilisons des Cookies et des technologies de suivi similaires pour suivre l'activité sur Notre Service et stocker certaines informations. Les technologies de suivi utilisées sont des balises, des tags et des scripts pour collecter et suivre des informations et pour améliorer et analyser Notre Service. Les technologies que nous utilisons peuvent inclure: ",
+    "data_collection_title": "Collecte et utilisation de vos données personnelles",
+    "data_deletion": "Si vous souhaitez supprimer vos données personnelles, rendez-vous sur la page des paramètres de votre compte en utilisant le menu \"Compte\" situé dans le coin supérieur droit de l'écran. Cliquez ensuite sur le bouton \"Supprimer le compte\" et cliquez sur \"Supprimer\" dans la fenêtre de confirmation. Cette action supprimera immédiatement votre compte et toutes les données associées.  Remarque : une fois déclenchée, cette action ne peut être annulée.",
+    "data_deletion_title": "Comment supprimer vos données personnelles",
+    "data_disclosure_title": "Divulgation de vos données personnelles",
+    "data_retention": "La Compagnie conservera Vos Données personnelles uniquement pendant la durée nécessaire aux fins énoncées dans la présente Politique de confidentialité. Nous conserverons et utiliserons Vos Données personnelles dans la mesure nécessaire pour nous conformer à nos obligations légales (par exemple, si nous sommes tenus de conserver vos données pour nous conformer aux lois applicables), résoudre les litiges et appliquer nos accords et politiques juridiques. La Compagnie conservera également les Données d'utilisation à des fins d'analyse interne. Les Données d'utilisation sont généralement conservées pendant une période plus courte, sauf si ces données sont utilisées pour renforcer la sécurité ou améliorer la fonctionnalité de Notre Service, ou si Nous sommes légalement obligés de conserver ces données pendant des périodes plus longues.",
+    "data_retention_title": "Conservation de vos données personnelles",
+    "data_security": "La sécurité de Vos Données Personnelles est importante pour Nous, mais n'oubliez pas qu'aucune méthode de transmission sur Internet, ou méthode de stockage électronique n'est sûre à 100%. Bien que Nous nous efforcions d'utiliser des moyens commercialement acceptables pour protéger Vos Données Personnelles, Nous ne pouvons pas garantir leur sécurité absolue",
+    "data_security_title": "Sécurité de vos données personnelles ",
+    "data_transfer": "Vos informations, y compris les Données personnelles, sont traitées dans les bureaux d'exploitation de la Compagnie et dans tout autre lieu où se trouvent les parties impliquées dans le traitement. Cela signifie que ces informations peuvent être transférées vers - et conservées sur - des ordinateurs situés en dehors de Votre état, province, pays ou autre juridiction gouvernementale où les lois de protection des données peuvent différer de celles de Votre juridiction. Votre consentement à la présente politique de confidentialité, suivi de votre soumission de ces informations, représente votre accord à ce transfert. La Compagnie prendra toutes les mesures raisonnablement nécessaires pour s'assurer que Vos données sont traitées en toute sécurité et conformément à la présente Politique de confidentialité et aucun transfert de Vos données personnelles n'aura lieu vers une organisation ou un pays à moins qu'il n'y ait des contrôles adéquats en place, y compris la sécurité de Vos données et autres informations personnelles.",
+    "data_transfer_title": "Transfert de vos données personnelles",
+    "data_types_title": "Types de données collectées",
+    "data_use_intro": "La Compagnie peut utiliser les Données personnelles aux fins suivantes:",
+    "data_use_items": [
+      "Pour fournir et maintenir notre Service, y compris pour surveiller l'utilisation de notre Service",
+      "Pour gérer votre compte: pour gérer votre inscription en tant qu'utilisateur du Service. Les Données personnelles que vous fournissez peuvent vous donner accès à différentes fonctionnalités du Service qui vous sont accessibles en tant qu'utilisateur enregistré.",
+      "Pour vous contacter: Vous contacter par email, appels téléphoniques, SMS, ou autres formes équivalentes de communication électronique, telles que les notifications push d'une application mobile concernant les mises à jour ou les communications informatives liées aux fonctionnalités, produits ou services contractés, y compris les mises à jour de sécurité, lorsque cela est nécessaire ou raisonnable pour leur mise en œuvre.",
+      "Vous fournir des nouvelles, des offres spéciales et des informations générales sur d'autres biens, services et événements que nous proposons et qui sont similaires à ceux que vous avez déjà achetés ou sur lesquels vous vous êtes renseigné, à moins que vous n'ayez choisi de ne pas recevoir ces informations.",
+      "Pour gérer vos demandes: Pour assister et gérer les demandes que vous nous adressez.",
+      "Pour les transferts d'entreprise: Nous pouvons utiliser Vos informations pour évaluer ou mener une fusion, un désinvestissement, une restructuration, une réorganisation, une dissolution ou toute autre vente ou transfert de tout ou partie de Nos actifs, que ce soit dans le cadre d'une poursuite d'activité ou d'une faillite, d'une liquidation ou d'une procédure similaire, dans laquelle les Données personnelles que Nous détenons sur les utilisateurs de nos Services font partie des actifs transférés.",
+      "À d'autres fins: Nous pouvons utiliser Vos informations à d'autres fins, telles que l'analyse des données, l'identification des tendances d'utilisation, la détermination de l'efficacité de nos campagnes promotionnelles et l'évaluation et l'amélioration de notre Service, de nos produits, de nos services, de notre marketing et de votre expérience."
+    ],
+    "data_use_title": "Utilisation de vos données personnelles",
+    "definitions": {
+      "account": "Compte désigne un compte unique créé pour Vous afin d'accéder à notre Service ou à certaines parties de notre Service",
+      "company": "La Compagnie (désignée par les termes Compagnie, Nous, Notre ou Nos dans le présent Contrat) désigne uSchedule.",
+      "cookies": "Les cookies sont de petits fichiers placés sur votre ordinateur, votre appareil mobile ou tout autre appareil par un site web, qui peuvent contenir les détails de votre historique de navigation sur ce site web parmi ses nombreuses utilisations.  Les exemples incluent, mais ne sont pas limités à, votre choix de la langue préférée ou quel utilisateur peut être connecté au site.",
+      "device": "Dispositif désigne tout appareil pouvant accéder au Service, tel qu'un ordinateur, ou un appareil mobile, y compris, mais sans s'y limiter, un téléphone cellulaire ou une tablette numérique.",
+      "personal_data": "Les Données Personnelles sont toutes les informations qui se rapportent à un individu identifié ou identifiable.",
+      "service": "Le service fait référence au site internet",
+      "service_provider": "Prestataire de services désigne toute personne physique ou morale qui traite les données pour le compte de la Compagnie. Il désigne les Compagnies tierces ou les personnes employées par la Compagnie pour faciliter le Service, pour fournir le Service au nom de la Compagnie, pour exécuter des services liés au Service ou pour aider la Compagnie à analyser la façon dont le Service est utilisé.",
+      "third_party_social_media": "Le service de médias sociaux tiers désigne tout site web ou tout réseau social par le biais duquel un Utilisateur peut se connecter ou créer un compte pour utiliser le Service.",
+      "usage_data": "Les données d'utilisation désignent les données collectées automatiquement, soit générées par l'utilisation du Service, soit provenant de l'infrastructure du Service elle-même (par exemple, la durée de visite d'une page).",
+      "website": "Site web fait référence à uSchedule, accessible depuis uschedule.me",
+      "you": "Vous désigne la personne physique accédant ou utilisant le Service, ou la Compagnie, ou toute autre entité juridique au nom de laquelle cette personne physique accède ou utilise le Service, selon le cas."
+    },
+    "definitions_intro": "Aux fins de la présente politique de confidentialité:",
+    "definitions_title": "Définitions",
+    "interpretation": "Les mots dont la lettre initiale est en majuscule ont des significations définies dans les conditions suivantes. Les définitions suivantes ont le même sens, qu'elles apparaissent au singulier ou au pluriel.",
+    "interpretation_and_definitions_title": "Interprétation et définitions",
+    "interpretation_title": "Interprétation",
+    "intro_description": "La présente politique de confidentialité décrit Nos politiques et procédures en matière de collecte, d'utilisation et de divulgation de Vos informations lorsque Vous utilisez le Service et Vous informe de Vos droits en matière de confidentialité et de la manière dont la loi Vous protège. Nous utilisons Vos données personnelles pour fournir et améliorer le Service. En utilisant le Service, vous acceptez la collecte et l'utilisation des informations conformément à la présente Politique de confidentialité. Cette politique de confidentialité a été créée avec l'aide du <link_generator>Générateur de politique de confidentialité</link_generator>.",
+    "last_updated": "Dernière mise à jour: {{date}}",
+    "law_enforcement": "Dans certaines circonstances, la Compagnie peut être tenue de divulguer Vos Données personnelles si la loi l'exige ou en réponse à des demandes valables des autorités publiques (par exemple, un tribunal ou une agence gouvernementale).",
+    "law_enforcement_title": "Application de la loi",
+    "legal_requirements": {
+      "defend_company_rights": "Protéger et défendre les droits ou les biens de l'entreprise",
+      "investigate_wrongdoing": "Prévenir ou enquêter sur d'éventuels actes répréhensibles en rapport avec le Service",
+      "legal_obligation": "Se conformer à une obligation légale",
+      "liability": "Protéger contre la responsabilité légale",
+      "protect_users": "Protéger la sécurité personnelle des Utilisateurs du Service ou du public"
+    },
+    "legal_requirements_intro": "La Compagnie peut divulguer vos données personnelles en croyant de bonne foi qu'une telle action est nécessaire pour:",
+    "legal_requirements_title": "Autres exigences légales ",
+    "outside_links": "Notre Service peut contenir des liens vers d'autres sites web qui ne sont pas exploités par Nous. Si vous cliquez sur un lien tiers, vous serez dirigé vers le site de ce tiers. Nous vous conseillons vivement de consulter la politique de confidentialité de chaque site que vous visitez. Nous n'avons aucun contrôle et n'assumons aucune responsabilité quant au contenu, aux politiques de confidentialité ou aux pratiques de tout site ou service tiers.",
+    "outside_links_title": "Liens vers d'autres sites web",
+    "page_title": "Politique de confidentialité",
+    "personal_data_intro": "Lors de l'utilisation de notre service, nous pouvons vous demander de nous fournir certaines informations personnellement identifiables qui peuvent être utilisées pour vous contacter ou vous identifier. Les informations personnellement identifiables peuvent inclure, mais ne sont pas limitées à;",
+    "personal_data_items": {
+      "email": "Adresse électronique",
+      "names": "Prénom et nom de famille",
+      "usage": "Données d'utilisation"
+    },
+    "personal_data_title": "Données personnelles",
+    "share_data_intro": "Nous pouvons partager vos informations personnelles dans les situations suivantes:",
+    "share_data_items": [
+      "Avec les fournisseurs de services: Nous pouvons partager Vos informations personnelles avec les Fournisseurs de services pour surveiller et analyser l'utilisation de notre Service, pour vous contacter.",
+      "Pour les transferts d'entreprise: Nous pouvons partager ou transférer Vos informations personnelles dans le cadre de, ou pendant les négociations de, toute fusion, vente d'actifs de la Compagnie, financement, ou acquisition de tout ou partie de Notre activité à une autre Compagnie.",
+      "Avec les partenaires commerciaux: Nous pouvons partager Vos informations avec Nos partenaires commerciaux pour Vous offrir certains produits, services ou promotions.",
+      "Avec d'autres utilisateurs: lorsque Vous partagez des informations personnelles ou interagissez de toute autre manière dans les zones publiques avec d'autres utilisateurs, ces informations peuvent être vues par tous les utilisateurs et peuvent être diffusées publiquement à l'extérieur. Si vous interagissez avec d'autres utilisateurs ou si vous vous inscrivez par le biais d'un service de médias sociaux tiers, vos contacts sur le service de médias sociaux tiers peuvent voir votre nom, votre profil, vos photos et la description de votre activité. De même, d'autres utilisateurs pourront voir les descriptions de Votre activité, communiquer avec Vous et voir Votre profil.",
+      "Avec votre consentement: Nous pouvons divulguer vos informations personnelles à toute autre fin avec votre consentement."
+    ],
+    "third_party_social_media_intro": "La Compagnie vous permet de créer un compte et de vous connecter pour utiliser le Service par le biais des Services de médias sociaux tiers suivants:",
+    "third_party_social_media_items": {
+      "facebook": "Facebook",
+      "google": "Google",
+      "microsoft": "Microsoft"
+    },
+    "third_party_social_media_outro": "Si vous décidez de vous inscrire par le biais d'un service de médias sociaux tiers ou de nous accorder autrement l'accès à ce service, nous pouvons recueillir des données personnelles déjà associées au compte de votre service de médias sociaux tiers, telles que votre nom, votre adresse électronique, vos activités ou votre liste de contacts associés à ce compte.",
+    "third_party_social_media_title": "Informations provenant de services de médias sociaux tiers ",
+    "translation_disclaimer": "En cas de divergence d'interprétation entre toutes les traductions de cette politique de confidentialité, l'anglais sera considéré comme officiel",
+    "usage_data": "Les Données d'utilisation sont collectées automatiquement lors de l'utilisation du Service. Les Données d'utilisation peuvent inclure des informations telles que le type d'appareil mobile que vous utilisez, l'adresse de protocole Internet (c'est-à-dire l'adresse IP) de votre appareil, le système d'exploitation, le type de navigateur, la version du navigateur, les pages de notre Service que vous visitez, l'heure et la date de votre visite, le temps passé sur ces pages, des informations qui peuvent identifier de manière unique votre appareil et d'autres données de diagnostic. Nous pouvons également recueillir les informations que votre navigateur envoie chaque fois que vous visitez notre Service ou lorsque vous accédez au Service par ou via un appareil mobile.",
+    "usage_data_title": "Données d'utilisation"
+  },
+  "scheduler": {
+    "add_by_email_placeholder": "Ajouter une personne par son adresse couriel",
+    "add_course": "Ajouter un cours",
+    "already_has_calendar_access": "Le compte '{{email}}' a déjà accès à ce calendrier.",
+    "choose_alternate": "Choisissez un substitut",
+    "closed_components": "Composants fermés",
+    "course_already_listed": "{{subject_code}} {{course_code}} est déjà dans la liste",
+    "delete_draft_modal": {
+      "message": "Êtes-vous sûr de vouloir supprimer le brouillon \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })\"? Cela ne peut être inversé.",
+      "message|with_name": "Êtes-vous sûr de vouloir supprimer le brouillon \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) – {{name}}\"? Cela ne peut être inversé.",
+      "title": "Supprimer le brouillon"
+    },
+    "delete_schedule_modal": {
+      "message": "Êtes-vous sûr de vouloir supprimer \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })\"? Cela ne peut être inversé.",
+      "message|with_name": "Êtes-vous sûr de vouloir supprimer \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) – {{name}}\"? Cela ne peut être inversé.",
+      "title": "Supprimer l'horaire"
+    },
+    "download_schedule": "Télécharger l'horaire",
+    "draft_schedules_title": "Horaire brouillon",
+    "edit_schedule_name": "Modifier le nom",
+    "error": {
+      "change_schedule_name": "Désolé, nous n'avons pas pu modifier le nom de l'horaire. Veuillez réessayer plus tard.",
+      "get_available_terms": "Un problème est survenu lors du chargement de la liste des termes disponibles.",
+      "get_calendar": "Il y a eu un problème de chargement des horaires dans le calendrier.",
+      "get_drafts": "Il y a eu un problème de chargement des horaires brouillon.",
+      "invalid_email": "Veuillez saisir une adresse électronique valide.",
+      "move_to_calendar": "Désolé, nous n'avons pas pu déplacer l'horaires vers le calendrier. Veuillez réessayer plus tard.",
+      "move_to_drafts": "Désolé, nous n'avons pas pu déplacer l'horaires vers les brouillons. Veuillez réessayer plus tard.",
+      "no_account_to_share_with": "Désolé, '{{ email }}' n'a pas encore de compte uSchedule. Demandez-lui de s'inscrire, puis vous pourrez partager le calendrier avec lui.",
+      "please_add_course": "Veuillez ajouter un cours.",
+      "remove_share": "Désolé, nous n'avons pas pu supprimer l'accès des utilisateurs à ce calendrier. Veuillez réessayer plus tard.",
+      "schedule_delete": "Désolé, nous n'avons pas été en mesure d'enregistrer votre horaire. Veuillez réessayer plus tard.",
+      "share_sheet_user_list": "Il y a eu un problème de chargement de la liste des utilisateurs avec lesquels cet élément est partagé.",
+      "term_is_full": "Le $t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) est plein. On ne peut pas ajouter plus de {{count}} cours à un terme.",
+      "term_is_full|plural": "Le $t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) est plein. On ne peut pas ajouter plus de {{count}} cours à un terme.",
+      "valid_course_code": "Veuillez entrer un code de cours valide.",
+      "valid_subject": "Veuillez entrer un code de sujet valide."
+    },
+    "evening_break": "Pause du soir (nécessite une pause pendant ces périodes)",
+    "go_to_schedules": "Aller aux horaires",
+    "hide_all": "Cacher tout",
+    "hide_lecture": "Cacher cours magistraux",
+    "lunch_break": "Pause déjeuner (nécessite une pause pendant ces périodes)",
+    "min_time": "Min. Temps",
+    "minimize_after": "Minimiser les classes après",
+    "minimize_before": "Minimiser les classes avant",
+    "move_to_calendar": "Déplacer vers le calendrier",
+    "move_to_drafts": "Déplacer vers les brouillons",
+    "no_drafts_message": "Vous n'avez pas de brouillons enregistrés. Vous pouvez utiliser le bouton d'enregistrement dans <link_scheduler>le constructeur d'horaires</link_scheduler> pour créer des brouillons.",
+    "no_schedules_found": "Il n'y a pas d'horaires possibles qui correspondent à vos configurations. Nous pouvons réessayer d'afficher les horaires avec des conflits pour vous aider à voir quels cours sont en conflit.",
+    "no_schedules_in_calendar": "Ce calendrier n'a pas d'horaires.",
+    "no_schedules_in_your_calendar": "Vous n'avez pas d'horaires enregistrés dans votre calendrier. Vous pouvez utiliser le bouton d'enregistrement <link_scheduler>le constructeur d'horaires</link_scheduler> pour en créer de nouveaux, ou déplacer un brouillon dans votre calendrier.",
+    "outage_timetable_format": "Malheureusement, en raison d'un changement dans la page Web des horaires de cours de l'Université d'Ottawa, nous ne sommes actuellement pas en mesure d'obtenir les données sur les cours. Nous travaillons à nous adapter au nouveau format le plus rapidement possible.",
+    "save_draft": "Enregistrer comme brouillon",
+    "save_schedule": "Sauvegarder l'horaire",
+    "save_to_calendar": "Enregistrer dans votre calendrier",
+    "schedule_name_optional": "Nom de l'horaire (facultatif)",
+    "schedule_uses_different_filters": "Cette horaires utilise des filtres différents de ceux définis dans l'onglet Options.",
+    "scheduler_module": {
+      "feedback": "Si vous remarquez des bugs ou si vous le trouvez lent, veuillez nous en informer via le <link_feedback>formulaire de commentaires</link_feedback>",
+      "info": "Nous essayons une nouvelle façon (espérons-le plus rapide) de générer des horaires!",
+      "slow_info": "Nous essayons un nouveau planificateur, mais il semble être un peu lent pour vos horaires",
+      "slow_options_tip": "Remarque : Vous pouvez également modifier cela dans l'onglet Options",
+      "switch_back": "Revenir en arrière",
+      "title": "Module Planificateur"
+    },
+    "share_calendar": "Calendrier de partage",
+    "show_all": "Montrer tout",
+    "show_all_conflicts": "voirs tous les conflits",
+    "show_hide_calendar": "Afficher / masquer le calendrier",
+    "success": {
+      "move_to_calendar": "Horaire \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })\" a été déplacé dans le calendrier.",
+      "move_to_calendar|with_name": "Horaire \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) – {{name}}\" a été déplacé dans le calendrier.",
+      "move_to_drafts": "Horaire \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })\" a été déplacé vers les projets.",
+      "move_to_drafts|with_name": "Horaire \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) – {{name}}\" a été déplacé vers les projets.",
+      "schedule_delete": "Horaire \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })\" a été supprimé.",
+      "schedule_delete|with_name": "Horaire \"$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) – {{name}}\" a été supprimé."
+    },
+    "time_conflicts": "Conflits de temps",
+    "time_format": "Format de temps",
+    "warning": {
+      "limit_reached": "Certains horaires du $t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" }) ne sont pas affichés car la limite a été atteinte."
+    }
+  },
+  "schools": {
+    "uottawa": "Université d'Ottawa",
+    "uottawa|with_country": "Université d'Ottawa, Canada"
+  },
+  "server_error": {
+    "oops": "Oops! Il semble que quelque chose s'est mal passé de notre côté. Nous essayons de détecter et de corriger ces erreurs du mieux que nous pouvons, mais si l'erreur persiste, vous pouvez nous contacter sur la page de commentaires.",
+    "server_error": "500 - Erreur du server"
+  },
+  "sojourner": {
+    "error": {
+      "search_failure": "Désolé, un problème est survenu lors de la recherche. Veuillez réessayer plus tard ou contactez-nous si cela se reproduit."
+    },
+    "no_items_found": "Aucun résultat trouvé",
+    "page_title": "Sojourner",
+    "search_for_items": "Rechercher un cours ou une accréditation"
+  },
+  "terms": {
+    "fall": "Terme d'automne {{year}}",
+    "summer": "Terme de printemps/été {{year}}",
+    "term_title": "$t(terms:{{term.season}}, { \"year\": \"{{term.year}}\" })",
+    "winter": "Terme d'hiver {{year}}"
+  },
+  "theme": {
+    "dark": "Sombre",
+    "light": "Clair"
+  }
+}

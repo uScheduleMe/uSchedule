@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UnifiedSearch should render properly 1`] = `
+<withAsync(Component)
+  autoFocus={true}
+  delay={200}
+  emptyLabel="sojourner:no_items_found-translated"
+  filterBy={[Function]}
+  highlightOnlyResult={true}
+  id="unified-search-typeahead"
+  isLoading={false}
+  labelKey="name"
+  minLength={3}
+  onChange={[Function]}
+  onSearch={[Function]}
+  options={Array []}
+  placeholder="sojourner:search_for_items-translated"
+  promptText="Type to search..."
+  renderMenuItemChildren={[Function]}
+  searchText="common:searching-translated&hellip;"
+  useCache={false}
+/>
+`;

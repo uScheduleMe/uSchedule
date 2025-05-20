@@ -1,0 +1,8 @@
+.connected-accounts .list-group {
+  font-size: 1.1rem;
+}
+
+.connected-accounts .list-group .list-group-item img {
+  height: 1.8em;
+  width: 1.8em;
+}

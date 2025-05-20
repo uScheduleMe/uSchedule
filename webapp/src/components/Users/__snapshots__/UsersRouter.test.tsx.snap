@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersRouter should render properly 1`] = `
+<Routes>
+  <Route
+    element={<Calendar />}
+    path=":user_uuid/calendar"
+  />
+  <Route
+    element={<DraftSchedules />}
+    path=":user_uuid/drafts"
+  />
+  <Route
+    element={<NotFound />}
+    path="*"
+  />
+</Routes>
+`;

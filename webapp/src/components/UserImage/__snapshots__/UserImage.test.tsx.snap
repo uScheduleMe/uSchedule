@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserImage should render properly 1`] = `
+<div
+  className="user-image-container color-3"
+>
+  <span
+    className="letter"
+  >
+    J
+  </span>
+  <gravatar
+    email="test@uschedule.me"
+    options={
+      Object {
+        "default": "blank",
+        "rating": "pg",
+        "size": 100,
+      }
+    }
+  >
+    <Component />
+  </gravatar>
+</div>
+`;

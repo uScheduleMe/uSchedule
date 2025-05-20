@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.vertical-align-center {
+  vertical-align: middle;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+/* Fixes rendering of flexbox with overflowing content to be contained
+  within its parent and allows text to wrap to accommodate  */
+.flex-fix {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.menu-item-text {
+  white-space: nowrap;
+}
+
+.dropdown-item-icon-left .menu-item-icon {
+  height: 24px;
+  line-height: 24px;
+  float: left;
+}
+.dropdown-item-icon-left .menu-item-text {
+  margin-left: 10px;
+}
+
+.dropdown-item-icon-right .menu-item-icon {
+  height: 24px;
+  line-height: 24px;
+  float: right;
+}
+.dropdown-item-icon-right .menu-item-text {
+  margin-right: 10px;
+}
+
+.dropdown-toggle-no-arrow > button::after,
+.dropdown-toggle-no-arrow::after {
+  content: none;
+}
+
+#toast-container {
+  position: absolute;
+  top: 70px;
+  right: 15px;
+  min-height: 10px;
+  z-index: 99;
+}
+
+.table .title-col {
+  width: 20%;
+  text-align: left;
+}
+
+.eh-large-icon {
+  font-size: 1.8em;
+}
+
+.form-control::placeholder {
+  color: var(--placeholder-color);
+}
+
+.break-word {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+/* 
+ * Customize Toastify css
+ */
+
+/* Make the toasts appear below the header */
+.Toastify__toast-container--top-right {
+  top: 72px; /* 56px for header + 16px for content padding */
+}
+
+/* Override the following values in both dark and light mode */
+
+.Toastify__toast--info {
+  background-color: var(--toastify-info-background-color);
+  color: var(--toastify-info-color);
+}
+
+.Toastify__toast--success {
+  background-color: var(--toastify-success-background-color);
+  color: var(--toastify-success-color);
+}
+
+.Toastify__toast--warning {
+  background-color: var(--toastify-warning-background-color);
+  color: var(--toastify-warning-color);
+}
+
+.Toastify__toast--error {
+  background-color: var(--toastify-error-background-color);
+  color: var(--toastify-error-color);
+}
+
+.Toastify__toast--default {
+  background-color: var(--toastify-default-background-color);
+  color: var(--toastify-default-color);
+}
+
+.Toastify__progress-bar--default {
+  background-image: none;
+  background-color: var(--toastify-default-progress-background-color);
+}
+
+.Toastify__toast--dark {
+  background-color: var(--toastify-dark-background-color);
+  color: var(--toastify-dark-color);
+}
+
+/* Only override the following values in the dark mode context.  
+ * The light mode should use the css provided with Toastify */
+
+[data-theme='dark'] .Toastify__close-button {
+  color: var(--toastify-default-close-btn-color);
+  opacity: var(--toastify-default-close-btn-opacity);
+}
+
+/* 
+ * Dark Mode Adjustments for Bootstrap
+ */
+
+[data-theme='dark'] .bg-light {
+  background-color: var(--dark) !important;
+}
+[data-theme='dark'] .bg-light .text-black-50 {
+  color: var(--light) !important;
+}
+
+[data-theme='dark'] .list-group-item-secondary {
+  background-color: var(--gray);
+  color: var(--text-black-85);
+}
+
+[data-theme='dark'] .btn-success,
+[data-theme='dark'] .btn-info,
+[data-theme='dark'] .btn-primary,
+[data-theme='dark'] .btn-warning,
+[data-theme='dark'] .btn-danger {
+  color: var(--text-white);
+}
+
+[data-theme='dark'] .popover {
+  background-color: var(--dark);
+  border-color: var(--gray);
+}
+
+/* Top Popover Arrow */
+[data-theme='dark'] .popover.bs-popover-top .arrow::before {
+  border-top-color: var(--gray);
+}
+[data-theme='dark'] .popover.bs-popover-top .arrow::after {
+  border-top-color: var(--dark);
+}
+
+/* Right Popover Arrow */
+[data-theme='dark'] .popover.bs-popover-right .arrow::before {
+  border-right-color: var(--gray);
+}
+[data-theme='dark'] .popover.bs-popover-right .arrow::after {
+  border-right-color: var(--dark);
+}
+
+/* Bottom Popover Arrow */
+[data-theme='dark'] .popover.bs-popover-bottom .arrow::before {
+  border-bottom-color: var(--gray);
+}
+[data-theme='dark'] .popover.bs-popover-bottom .arrow::after {
+  border-bottom-color: var(--dark);
+}
+[data-theme='dark'] .popover.bs-popover-bottom .popover-header::before {
+  border-bottom-color: var(--dark);
+}
+
+/* Left Popover Arrow */
+[data-theme='dark'] .popover.bs-popover-left .arrow::before {
+  border-left-color: var(--gray);
+}
+[data-theme='dark'] .popover.bs-popover-left .arrow::after {
+  border-left-color: var(--dark);
+}
+
+[data-theme='dark'] .popover .popover-header {
+  background-color: var(--gray);
+  border-color: var(--gray);
+  color: var(--text-black-85);
+}
+
+[data-theme='dark'] .popover .popover-body {
+  color: var(--text-white);
+}
+
+[data-theme='light'] .dark-only {
+  display: none;
+}
+
+[data-theme='dark'] .light-only {
+  display: none;
+}

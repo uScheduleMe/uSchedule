@@ -1,0 +1,7 @@
+SHELL=/bin/bash
+PATH=/usr/bin:/bin:/usr/local/bin
+* * * * * touch /app/heartbeat
+0 */6 * * * update_available_terms -s /var/log/uschedule/ -l /var/log/uschedule -q -t
+0 7 * 3-8 * update_timetables -y 2021 -t summer -s /var/log/uschedule/ -l /var/log/uschedule -q
+0 7 * 5-12 * update_timetables -y 2021 -t fall -s /var/log/uschedule/ -l /var/log/uschedule -q
+0 7 * * * update_timetables -y 2021 -t winter -s /var/log/uschedule/ -l /var/log/uschedule -q

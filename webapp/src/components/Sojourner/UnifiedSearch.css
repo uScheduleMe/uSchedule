@@ -1,0 +1,21 @@
+/* Make search result subtitle legible when highlighted */
+a.dropdown-item:active div.item-subtitle {
+  color: #333333 !important;
+}
+
+/* Wrap search result and no results text */
+a.dropdown-item {
+  white-space: normal !important;
+}
+
+/* Remove x space on the highlight so it doesn't separate words */
+a.dropdown-item mark {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Adjust the highlighter colour for dark mode */
+[data-theme='dark'] a.dropdown-item mark {
+  color: #ffffff;
+  background-color: #3f2d00;
+}

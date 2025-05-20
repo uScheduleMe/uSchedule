@@ -1,0 +1,14 @@
+color: true
+require:
+  - ts-node/register
+  - tsconfig-paths/register
+file:
+  - mocha-pre-test-setup.cjs
+spec:
+  - src/**/*.spec.ts
+
+forbid-only: true
+forbid-pending: true
+reporter: json
+reporter-options:
+  - output=results.json

@@ -1,0 +1,2 @@
+ENV=dev
+DEBUG=true

@@ -1,0 +1,432 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render properly 1`] = `
+<Fragment>
+  <Navbar
+    bg="dark"
+    className="main-nav"
+    collapseOnSelect={false}
+    expand={true}
+    fixed="top"
+    variant="dark"
+  >
+    <Container
+      className="px-sm-3"
+      fluid={false}
+    >
+      <NavbarBrand
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Link",
+            "render": [Function],
+          }
+        }
+        to="/"
+      >
+        <img
+          alt="common:uschedule_logo-translated"
+          className="site-icon mr-2"
+          src="logo.png"
+        />
+        <span
+          className="site-title"
+        >
+          uSchedule
+          <span
+            className="domain-suffix text-white-50"
+          >
+            .me
+          </span>
+        </span>
+      </NavbarBrand>
+      <NavbarToggle
+        aria-controls="main-navbar-nav"
+        as="span"
+        className="menu-icon text-light ml-2 collapsed"
+        label="Toggle navigation"
+        onClick={[Function]}
+      >
+        <FontAwesomeIcon
+          beat={false}
+          beatFade={false}
+          border={false}
+          bounce={false}
+          className="sub-icon top-left"
+          fade={false}
+          fixedWidth={false}
+          flip={false}
+          icon={
+            Object {
+              "icon": Array [
+                448,
+                512,
+                Array [
+                  8211,
+                  8722,
+                  10134,
+                  "subtract",
+                ],
+                "f068",
+                "M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z",
+              ],
+              "iconName": "minus",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          maskId={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          shake={false}
+          size={null}
+          spin={false}
+          spinPulse={false}
+          spinReverse={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          titleId={null}
+          transform={null}
+        />
+        <FontAwesomeIcon
+          beat={false}
+          beatFade={false}
+          border={false}
+          bounce={false}
+          className="sub-icon top-right"
+          fade={false}
+          fixedWidth={false}
+          flip={false}
+          icon={
+            Object {
+              "icon": Array [
+                448,
+                512,
+                Array [
+                  8211,
+                  8722,
+                  10134,
+                  "subtract",
+                ],
+                "f068",
+                "M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z",
+              ],
+              "iconName": "minus",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          maskId={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          shake={false}
+          size={null}
+          spin={false}
+          spinPulse={false}
+          spinReverse={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          titleId={null}
+          transform={null}
+        />
+        <FontAwesomeIcon
+          beat={false}
+          beatFade={false}
+          border={false}
+          bounce={false}
+          className="sub-icon middle-left"
+          fade={false}
+          fixedWidth={false}
+          flip={false}
+          icon={
+            Object {
+              "icon": Array [
+                448,
+                512,
+                Array [
+                  8211,
+                  8722,
+                  10134,
+                  "subtract",
+                ],
+                "f068",
+                "M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z",
+              ],
+              "iconName": "minus",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          maskId={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          shake={false}
+          size={null}
+          spin={false}
+          spinPulse={false}
+          spinReverse={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          titleId={null}
+          transform={null}
+        />
+        <FontAwesomeIcon
+          beat={false}
+          beatFade={false}
+          border={false}
+          bounce={false}
+          className="sub-icon middle-right"
+          fade={false}
+          fixedWidth={false}
+          flip={false}
+          icon={
+            Object {
+              "icon": Array [
+                448,
+                512,
+                Array [
+                  8211,
+                  8722,
+                  10134,
+                  "subtract",
+                ],
+                "f068",
+                "M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z",
+              ],
+              "iconName": "minus",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          maskId={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          shake={false}
+          size={null}
+          spin={false}
+          spinPulse={false}
+          spinReverse={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          titleId={null}
+          transform={null}
+        />
+        <FontAwesomeIcon
+          beat={false}
+          beatFade={false}
+          border={false}
+          bounce={false}
+          className="sub-icon bottom-left"
+          fade={false}
+          fixedWidth={false}
+          flip={false}
+          icon={
+            Object {
+              "icon": Array [
+                448,
+                512,
+                Array [
+                  8211,
+                  8722,
+                  10134,
+                  "subtract",
+                ],
+                "f068",
+                "M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z",
+              ],
+              "iconName": "minus",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          maskId={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          shake={false}
+          size={null}
+          spin={false}
+          spinPulse={false}
+          spinReverse={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          titleId={null}
+          transform={null}
+        />
+        <FontAwesomeIcon
+          beat={false}
+          beatFade={false}
+          border={false}
+          bounce={false}
+          className="sub-icon bottom-right"
+          fade={false}
+          fixedWidth={false}
+          flip={false}
+          icon={
+            Object {
+              "icon": Array [
+                448,
+                512,
+                Array [
+                  8211,
+                  8722,
+                  10134,
+                  "subtract",
+                ],
+                "f068",
+                "M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z",
+              ],
+              "iconName": "minus",
+              "prefix": "fas",
+            }
+          }
+          inverse={false}
+          listItem={false}
+          mask={null}
+          maskId={null}
+          pull={null}
+          pulse={false}
+          rotation={null}
+          shake={false}
+          size={null}
+          spin={false}
+          spinPulse={false}
+          spinReverse={false}
+          swapOpacity={false}
+          symbol={false}
+          title=""
+          titleId={null}
+          transform={null}
+        />
+      </NavbarToggle>
+      <NavbarCollapse
+        id="main-navbar-nav"
+      >
+        <Nav
+          className="ml-auto"
+          fill={false}
+          justify={false}
+        >
+          <ThemeDropdown
+            className="control-icon px-1 ml-3 mr-0"
+          />
+          <LanguageDropdown
+            className="control-icon px-1 ml-3 mr-0"
+          />
+        </Nav>
+      </NavbarCollapse>
+    </Container>
+  </Navbar>
+  <Alert
+    className="donate-banner d-flex align-items-center justify-content-center rounded-0"
+    closeLabel="Close alert"
+    dismissible={true}
+    onClose={[Function]}
+    show={true}
+    transition={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "appear": false,
+          "in": false,
+          "mountOnEnter": false,
+          "timeout": 300,
+          "unmountOnExit": false,
+        },
+        "displayName": "Fade",
+        "render": [Function],
+      }
+    }
+    variant="info"
+  >
+    donate:banner_title-translated
+    <OverlayTrigger
+      defaultShow={false}
+      overlay={
+        <ForwardRef
+          content={true}
+          id="popover-donate-info"
+          placement="right"
+        >
+          donate:banner_info-translated
+        </ForwardRef>
+      }
+      placement="bottom"
+      rootClose={true}
+      trigger="click"
+    >
+      <FontAwesomeIcon
+        beat={false}
+        beatFade={false}
+        border={false}
+        bounce={false}
+        className="ml-2"
+        fade={false}
+        fixedWidth={true}
+        flip={false}
+        icon={
+          Object {
+            "icon": Array [
+              512,
+              512,
+              Array [
+                "info-circle",
+              ],
+              "f05a",
+              "M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z",
+            ],
+            "iconName": "circle-info",
+            "prefix": "fas",
+          }
+        }
+        inverse={false}
+        listItem={false}
+        mask={null}
+        maskId={null}
+        pull={null}
+        pulse={false}
+        role="button"
+        rotation={null}
+        shake={false}
+        size={null}
+        spin={false}
+        spinPulse={false}
+        spinReverse={false}
+        swapOpacity={false}
+        symbol={false}
+        title=""
+        titleId={null}
+        transform={null}
+      />
+    </OverlayTrigger>
+    <Button
+      active={false}
+      className="btn-sm ml-4"
+      disabled={false}
+      onClick={[Function]}
+      variant="info"
+    >
+      common:donate-translated
+    </Button>
+  </Alert>
+</Fragment>
+`;

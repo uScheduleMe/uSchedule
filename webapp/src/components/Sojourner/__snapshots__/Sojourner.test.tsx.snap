@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sojourner should render properly 1`] = `
+<Container
+  fluid={false}
+>
+  <PageTitle
+    headTitle="sojourner:page_title-translated"
+  >
+    sojourner:page_title-translated
+  </PageTitle>
+  <UnifiedSearch
+    onItemsSelected={[Function]}
+  />
+</Container>
+`;

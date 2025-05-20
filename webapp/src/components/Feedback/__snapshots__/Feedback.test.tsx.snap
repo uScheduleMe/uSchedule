@@ -1,0 +1,245 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Feedback should render properly 1`] = `
+<Container
+  fluid={false}
+>
+  <PageTitle
+    headTitle="common:feedback-translated"
+  >
+    common:feedback-translated
+  </PageTitle>
+  <p
+    className="mb-4"
+  >
+    feedback:report_bug-translated
+  </p>
+  <ForwardRef(renderIconAlert)
+    className="mb-4"
+    show={false}
+    variant="success"
+  >
+    feedback:success.message_sent-translated
+  </ForwardRef(renderIconAlert)>
+  <ForwardRef(renderIconAlert)
+    className="mb-4"
+    show={false}
+    variant="danger"
+  >
+    feedback:error.message_sent_fail-translated
+  </ForwardRef(renderIconAlert)>
+  <Form
+    inline={false}
+    onSubmit={[Function]}
+  >
+    <FormRow>
+      <FormGroup
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Col",
+            "render": [Function],
+          }
+        }
+        md={6}
+        xs={12}
+      >
+        <FormLabel
+          column={false}
+          htmlFor="name"
+          srOnly={false}
+        >
+          feedback:first_and_last-translated
+        </FormLabel>
+        <FormControl
+          disabled={false}
+          id="name"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </FormGroup>
+      <FormGroup
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Col",
+            "render": [Function],
+          }
+        }
+        md={6}
+        xs={12}
+      >
+        <FormLabel
+          column={false}
+          htmlFor="email"
+          srOnly={false}
+        >
+          feedback:email_address-translated
+        </FormLabel>
+        <FormControl
+          disabled={false}
+          id="email"
+          onChange={[Function]}
+          type="email"
+          value=""
+        />
+      </FormGroup>
+      <FormGroup
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Col",
+            "render": [Function],
+          }
+        }
+        xs={12}
+      >
+        <FormLabel
+          column={false}
+          htmlFor="subject"
+          srOnly={false}
+        >
+          <span
+            className="text-danger mr-1"
+          >
+            *
+          </span>
+          common:subject-translated
+        </FormLabel>
+        <FormControl
+          disabled={false}
+          id="subject"
+          onChange={[Function]}
+          type="text"
+          value=""
+        />
+      </FormGroup>
+      <FormGroup
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Col",
+            "render": [Function],
+          }
+        }
+        xs={12}
+      >
+        <FormLabel
+          column={false}
+          htmlFor="message"
+          srOnly={false}
+        >
+          <span
+            className="text-danger mr-1"
+          >
+            *
+          </span>
+          common:message-translated
+        </FormLabel>
+        <FormControl
+          as="textarea"
+          disabled={false}
+          id="message"
+          onChange={[Function]}
+          rows={10}
+          value=""
+        />
+      </FormGroup>
+      <FormGroup
+        as={
+          Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "displayName": "Col",
+            "render": [Function],
+          }
+        }
+        xs={12}
+      >
+        <Button
+          active={false}
+          disabled={true}
+          onClick={[Function]}
+          variant="primary"
+        >
+          <FontAwesomeIcon
+            beat={false}
+            beatFade={false}
+            border={false}
+            bounce={false}
+            className="mr-2"
+            fade={false}
+            fixedWidth={false}
+            flip={false}
+            icon={
+              Object {
+                "icon": Array [
+                  512,
+                  512,
+                  Array [
+                    61913,
+                  ],
+                  "f1d8",
+                  "M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z",
+                ],
+                "iconName": "paper-plane",
+                "prefix": "fas",
+              }
+            }
+            inverse={false}
+            listItem={false}
+            mask={null}
+            maskId={null}
+            pull={null}
+            pulse={false}
+            rotation={null}
+            shake={false}
+            size={null}
+            spin={false}
+            spinPulse={false}
+            spinReverse={false}
+            swapOpacity={false}
+            symbol={false}
+            title=""
+            titleId={null}
+            transform={null}
+          />
+          common:send-translated
+        </Button>
+      </FormGroup>
+    </FormRow>
+  </Form>
+  <Overlay
+    container={
+      Object {
+        "current": null,
+      }
+    }
+    onHide={[Function]}
+    placement="top-start"
+    rootClose={true}
+    show={false}
+    target={null}
+    transition={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "appear": false,
+          "in": false,
+          "mountOnEnter": false,
+          "timeout": 300,
+          "unmountOnExit": false,
+        },
+        "displayName": "Fade",
+        "render": [Function],
+      }
+    }
+  >
+    <ForwardRef
+      content={true}
+      id="alert-tip-message"
+      placement="right"
+    />
+  </Overlay>
+</Container>
+`;

@@ -1,0 +1,1353 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "5",
+  "dialect": "pg",
+  "tables": {
+    "auth_group": {
+      "name": "auth_group",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(150)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "auth_group_name_a6ea08ec_like": {
+          "name": "auth_group_name_a6ea08ec_like",
+          "columns": ["name"],
+          "isUnique": false
+        },
+        "auth_group_name_key": {
+          "name": "auth_group_name_key",
+          "columns": ["name"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "data_access_accreditationunit": {
+      "name": "data_access_accreditationunit",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "data_access_timestamp": {
+      "name": "data_access_timestamp",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "reason": {
+          "name": "reason",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "timestamp": {
+          "name": "timestamp",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_timestamp_reason_ddb8233e_uniq": {
+          "name": "data_access_timestamp_reason_ddb8233e_uniq",
+          "columns": ["reason"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "data_access_timetable": {
+      "name": "data_access_timetable",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigint",
+          "primaryKey": true,
+          "notNull": true,
+          "default": "nextval('data_access_timetable_id_seq'::regclass)"
+        },
+        "sections": {
+          "name": "sections",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "year": {
+          "name": "year",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "term": {
+          "name": "term",
+          "type": "varchar(6)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "subject_code": {
+          "name": "subject_code",
+          "type": "varchar(5)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "course_code": {
+          "name": "course_code",
+          "type": "varchar(10)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "course_name": {
+          "name": "course_name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "school": {
+          "name": "school",
+          "type": "varchar(20)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date_created": {
+          "name": "date_created",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date_updated": {
+          "name": "date_updated",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_timetable_school_year_term_subject_b2910901_uniq": {
+          "name": "data_access_timetable_school_year_term_subject_b2910901_uniq",
+          "columns": ["year", "term", "subject_code", "course_code", "school"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "data_access_activityaccreditationassignment": {
+      "name": "data_access_activityaccreditationassignment",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "quantity": {
+          "name": "quantity",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "activity_id": {
+          "name": "activity_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "aus_id": {
+          "name": "aus_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_activityaccred_activity_id_0492a07b": {
+          "name": "data_access_activityaccred_activity_id_0492a07b",
+          "columns": ["activity_id"],
+          "isUnique": false
+        },
+        "data_access_activityaccreditationassignment_aus_id_9469fd11": {
+          "name": "data_access_activityaccreditationassignment_aus_id_9469fd11",
+          "columns": ["aus_id"],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "data_access_activity_activity_id_0492a07b_fk_data_acce": {
+          "name": "data_access_activity_activity_id_0492a07b_fk_data_acce",
+          "tableFrom": "data_access_activityaccreditationassignment",
+          "tableTo": "data_access_activity",
+          "columnsFrom": ["activity_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "data_access_activity_aus_id_9469fd11_fk_data_acce": {
+          "name": "data_access_activity_aus_id_9469fd11_fk_data_acce",
+          "tableFrom": "data_access_activityaccreditationassignment",
+          "tableTo": "data_access_accreditationunit",
+          "columnsFrom": ["aus_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "data_access_user": {
+      "name": "data_access_user",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "given_name": {
+          "name": "given_name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "family_name": {
+          "name": "family_name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "disp_name": {
+          "name": "disp_name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "uuid": {
+          "name": "uuid",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_user_uuid_d0e51d4b_uniq": {
+          "name": "data_access_user_uuid_d0e51d4b_uniq",
+          "columns": ["uuid"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "auth_user_user_permissions": {
+      "name": "auth_user_user_permissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "permission_id": {
+          "name": "permission_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "auth_user_user_permissions_permission_id_1fbb5f2c": {
+          "name": "auth_user_user_permissions_permission_id_1fbb5f2c",
+          "columns": ["permission_id"],
+          "isUnique": false
+        },
+        "auth_user_user_permissions_user_id_a95ead1b": {
+          "name": "auth_user_user_permissions_user_id_a95ead1b",
+          "columns": ["user_id"],
+          "isUnique": false
+        },
+        "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq": {
+          "name": "auth_user_user_permissions_user_id_permission_id_14a6b632_uniq",
+          "columns": ["user_id", "permission_id"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm": {
+          "name": "auth_user_user_permi_permission_id_1fbb5f2c_fk_auth_perm",
+          "tableFrom": "auth_user_user_permissions",
+          "tableTo": "auth_permission",
+          "columnsFrom": ["permission_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id": {
+          "name": "auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id",
+          "tableFrom": "auth_user_user_permissions",
+          "tableTo": "auth_user",
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "data_access_calendarcomponents": {
+      "name": "data_access_calendarcomponents",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "section_id": {
+          "name": "section_id",
+          "type": "varchar(10)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "component_id": {
+          "name": "component_id",
+          "type": "varchar(10)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calendar_id": {
+          "name": "calendar_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "timetable_id": {
+          "name": "timetable_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_calendarcomponents_calendar_id_6ff919b5": {
+          "name": "data_access_calendarcomponents_calendar_id_6ff919b5",
+          "columns": ["calendar_id"],
+          "isUnique": false
+        },
+        "data_access_calendarcomponents_timetable_id_ffb6c4dd": {
+          "name": "data_access_calendarcomponents_timetable_id_ffb6c4dd",
+          "columns": ["timetable_id"],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "data_access_calendarcomponents_calendar_id_6ff919b5_fk": {
+          "name": "data_access_calendarcomponents_calendar_id_6ff919b5_fk",
+          "tableFrom": "data_access_calendarcomponents",
+          "tableTo": "data_access_calendar",
+          "columnsFrom": ["calendar_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "data_access_calendarcomponents_timetable_id_ffb6c4dd_fk": {
+          "name": "data_access_calendarcomponents_timetable_id_ffb6c4dd_fk",
+          "tableFrom": "data_access_calendarcomponents",
+          "tableTo": "data_access_timetable",
+          "columnsFrom": ["timetable_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "data_access_availableterms": {
+      "name": "data_access_availableterms",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "year": {
+          "name": "year",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "term": {
+          "name": "term",
+          "type": "varchar(6)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_availableterms_year_term_5106bbbb_uniq": {
+          "name": "data_access_availableterms_year_term_5106bbbb_uniq",
+          "columns": ["year", "term"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "data_access_course": {
+      "name": "data_access_course",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "school": {
+          "name": "school",
+          "type": "varchar(20)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "subject_code": {
+          "name": "subject_code",
+          "type": "varchar(5)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "course_code": {
+          "name": "course_code",
+          "type": "varchar(10)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "course_name": {
+          "name": "course_name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date_created": {
+          "name": "date_created",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date_updated": {
+          "name": "date_updated",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_course_school_subject_code_cour_95e6b147_uniq": {
+          "name": "data_access_course_school_subject_code_cour_95e6b147_uniq",
+          "columns": ["school", "subject_code", "course_code"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "django_session": {
+      "name": "django_session",
+      "schema": "",
+      "columns": {
+        "session_key": {
+          "name": "session_key",
+          "type": "varchar(40)",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "session_data": {
+          "name": "session_data",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "expire_date": {
+          "name": "expire_date",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "django_session_expire_date_a5c62663": {
+          "name": "django_session_expire_date_a5c62663",
+          "columns": ["expire_date"],
+          "isUnique": false
+        },
+        "django_session_session_key_c0390e0f_like": {
+          "name": "django_session_session_key_c0390e0f_like",
+          "columns": ["session_key"],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "data_access_subject": {
+      "name": "data_access_subject",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "subject": {
+          "name": "subject",
+          "type": "varchar(72)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "subject_code": {
+          "name": "subject_code",
+          "type": "varchar(5)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "link": {
+          "name": "link",
+          "type": "varchar(66)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "data_access_schedule": {
+      "name": "data_access_schedule",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "term": {
+          "name": "term",
+          "type": "varchar(6)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(128)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "year": {
+          "name": "year",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "calendar_id": {
+          "name": "calendar_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_schedule_calendar_id_1b90eb66": {
+          "name": "data_access_schedule_calendar_id_1b90eb66",
+          "columns": ["calendar_id"],
+          "isUnique": false
+        },
+        "data_access_schedule_calendar_id_term_423d8aae_uniq": {
+          "name": "data_access_schedule_calendar_id_term_423d8aae_uniq",
+          "columns": ["term", "calendar_id"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "data_access_schedule_calendar_id_1b90eb66_fk": {
+          "name": "data_access_schedule_calendar_id_1b90eb66_fk",
+          "tableFrom": "data_access_schedule",
+          "tableTo": "data_access_calendar",
+          "columnsFrom": ["calendar_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "django_migrations": {
+      "name": "django_migrations",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "app": {
+          "name": "app",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "applied": {
+          "name": "applied",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "data_access_email": {
+      "name": "data_access_email",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "email_address": {
+          "name": "email_address",
+          "type": "varchar(254)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_email_email_address_2ae6341c_like": {
+          "name": "data_access_email_email_address_2ae6341c_like",
+          "columns": ["email_address"],
+          "isUnique": false
+        },
+        "data_access_email_email_address_key": {
+          "name": "data_access_email_email_address_key",
+          "columns": ["email_address"],
+          "isUnique": true
+        },
+        "data_access_email_user_id_c1ad3f84": {
+          "name": "data_access_email_user_id_c1ad3f84",
+          "columns": ["user_id"],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "data_access_email_user_id_c1ad3f84_fk": {
+          "name": "data_access_email_user_id_c1ad3f84_fk",
+          "tableFrom": "data_access_email",
+          "tableTo": "data_access_user",
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "data_access_calendar": {
+      "name": "data_access_calendar",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "is_primary": {
+          "name": "is_primary",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "notifications_enabled": {
+          "name": "notifications_enabled",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_calendar_user_id_6af63a8b": {
+          "name": "data_access_calendar_user_id_6af63a8b",
+          "columns": ["user_id"],
+          "isUnique": false
+        },
+        "single_primary_calendar_per_user": {
+          "name": "single_primary_calendar_per_user",
+          "columns": ["is_primary", "user_id"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "data_access_calendar_user_id_6af63a8b_fk": {
+          "name": "data_access_calendar_user_id_6af63a8b_fk",
+          "tableFrom": "data_access_calendar",
+          "tableTo": "data_access_user",
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "data_access_calendarshare": {
+      "name": "data_access_calendarshare",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "calendar_id": {
+          "name": "calendar_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_calendarshare_calendar_id_c73e1734": {
+          "name": "data_access_calendarshare_calendar_id_c73e1734",
+          "columns": ["calendar_id"],
+          "isUnique": false
+        },
+        "data_access_calendarshare_user_id_2943f69a": {
+          "name": "data_access_calendarshare_user_id_2943f69a",
+          "columns": ["user_id"],
+          "isUnique": false
+        },
+        "data_access_calendarshare_user_id_calendar_id_c52abf63_uniq": {
+          "name": "data_access_calendarshare_user_id_calendar_id_c52abf63_uniq",
+          "columns": ["calendar_id", "user_id"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "data_access_calendarshare_calendar_id_c73e1734_fk": {
+          "name": "data_access_calendarshare_calendar_id_c73e1734_fk",
+          "tableFrom": "data_access_calendarshare",
+          "tableTo": "data_access_calendar",
+          "columnsFrom": ["calendar_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "data_access_calendarshare_user_id_2943f69a_fk": {
+          "name": "data_access_calendarshare_user_id_2943f69a_fk",
+          "tableFrom": "data_access_calendarshare",
+          "tableTo": "data_access_user",
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "data_access_accreditation": {
+      "name": "data_access_accreditation",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "description": {
+          "name": "description",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "required_aus": {
+          "name": "required_aus",
+          "type": "jsonb",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "auth_user": {
+      "name": "auth_user",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "password": {
+          "name": "password",
+          "type": "varchar(128)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "last_login": {
+          "name": "last_login",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "is_superuser": {
+          "name": "is_superuser",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "username": {
+          "name": "username",
+          "type": "varchar(150)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "first_name": {
+          "name": "first_name",
+          "type": "varchar(150)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "last_name": {
+          "name": "last_name",
+          "type": "varchar(150)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "email": {
+          "name": "email",
+          "type": "varchar(254)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_staff": {
+          "name": "is_staff",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_active": {
+          "name": "is_active",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "date_joined": {
+          "name": "date_joined",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "auth_user_username_6821ab7c_like": {
+          "name": "auth_user_username_6821ab7c_like",
+          "columns": ["username"],
+          "isUnique": false
+        },
+        "auth_user_username_key": {
+          "name": "auth_user_username_key",
+          "columns": ["username"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "auth_user_groups": {
+      "name": "auth_user_groups",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "group_id": {
+          "name": "group_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "auth_user_groups_group_id_97559544": {
+          "name": "auth_user_groups_group_id_97559544",
+          "columns": ["group_id"],
+          "isUnique": false
+        },
+        "auth_user_groups_user_id_6a12ed8b": {
+          "name": "auth_user_groups_user_id_6a12ed8b",
+          "columns": ["user_id"],
+          "isUnique": false
+        },
+        "auth_user_groups_user_id_group_id_94350c0c_uniq": {
+          "name": "auth_user_groups_user_id_group_id_94350c0c_uniq",
+          "columns": ["user_id", "group_id"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "auth_user_groups_group_id_97559544_fk_auth_group_id": {
+          "name": "auth_user_groups_group_id_97559544_fk_auth_group_id",
+          "tableFrom": "auth_user_groups",
+          "tableTo": "auth_group",
+          "columnsFrom": ["group_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "auth_user_groups_user_id_6a12ed8b_fk_auth_user_id": {
+          "name": "auth_user_groups_user_id_6a12ed8b_fk_auth_user_id",
+          "tableFrom": "auth_user_groups",
+          "tableTo": "auth_user",
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "auth_group_permissions": {
+      "name": "auth_group_permissions",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "group_id": {
+          "name": "group_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "permission_id": {
+          "name": "permission_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "auth_group_permissions_group_id_b120cbf9": {
+          "name": "auth_group_permissions_group_id_b120cbf9",
+          "columns": ["group_id"],
+          "isUnique": false
+        },
+        "auth_group_permissions_group_id_permission_id_0cd325b0_uniq": {
+          "name": "auth_group_permissions_group_id_permission_id_0cd325b0_uniq",
+          "columns": ["group_id", "permission_id"],
+          "isUnique": true
+        },
+        "auth_group_permissions_permission_id_84c5c92e": {
+          "name": "auth_group_permissions_permission_id_84c5c92e",
+          "columns": ["permission_id"],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "auth_group_permissio_permission_id_84c5c92e_fk_auth_perm": {
+          "name": "auth_group_permissio_permission_id_84c5c92e_fk_auth_perm",
+          "tableFrom": "auth_group_permissions",
+          "tableTo": "auth_permission",
+          "columnsFrom": ["permission_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "auth_group_permissions_group_id_b120cbf9_fk_auth_group_id": {
+          "name": "auth_group_permissions_group_id_b120cbf9_fk_auth_group_id",
+          "tableFrom": "auth_group_permissions",
+          "tableTo": "auth_group",
+          "columnsFrom": ["group_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "django_content_type": {
+      "name": "django_content_type",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "app_label": {
+          "name": "app_label",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "model": {
+          "name": "model",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "django_content_type_app_label_model_76bd3d3b_uniq": {
+          "name": "django_content_type_app_label_model_76bd3d3b_uniq",
+          "columns": ["app_label", "model"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    },
+    "data_access_ssoprovider": {
+      "name": "data_access_ssoprovider",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "provider": {
+          "name": "provider",
+          "type": "varchar(128)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "provider_uid": {
+          "name": "provider_uid",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_ssoprovider_provider_provider_uid_645da6de_uniq": {
+          "name": "data_access_ssoprovider_provider_provider_uid_645da6de_uniq",
+          "columns": ["provider", "provider_uid"],
+          "isUnique": true
+        },
+        "data_access_ssoprovider_user_id_4b01c055": {
+          "name": "data_access_ssoprovider_user_id_4b01c055",
+          "columns": ["user_id"],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "data_access_ssoprovider_user_id_4b01c055_fk": {
+          "name": "data_access_ssoprovider_user_id_4b01c055_fk",
+          "tableFrom": "data_access_ssoprovider",
+          "tableTo": "data_access_user",
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "auth_permission": {
+      "name": "auth_permission",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "content_type_id": {
+          "name": "content_type_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "codename": {
+          "name": "codename",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "auth_permission_content_type_id_2f476e4b": {
+          "name": "auth_permission_content_type_id_2f476e4b",
+          "columns": ["content_type_id"],
+          "isUnique": false
+        },
+        "auth_permission_content_type_id_codename_01ab375a_uniq": {
+          "name": "auth_permission_content_type_id_codename_01ab375a_uniq",
+          "columns": ["content_type_id", "codename"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "auth_permission_content_type_id_2f476e4b_fk_django_co": {
+          "name": "auth_permission_content_type_id_2f476e4b_fk_django_co",
+          "tableFrom": "auth_permission",
+          "tableTo": "django_content_type",
+          "columnsFrom": ["content_type_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "django_admin_log": {
+      "name": "django_admin_log",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "action_time": {
+          "name": "action_time",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "object_id": {
+          "name": "object_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "object_repr": {
+          "name": "object_repr",
+          "type": "varchar(200)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "action_flag": {
+          "name": "action_flag",
+          "type": "smallint",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "change_message": {
+          "name": "change_message",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "content_type_id": {
+          "name": "content_type_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "django_admin_log_content_type_id_c4bce8eb": {
+          "name": "django_admin_log_content_type_id_c4bce8eb",
+          "columns": ["content_type_id"],
+          "isUnique": false
+        },
+        "django_admin_log_user_id_c564eba6": {
+          "name": "django_admin_log_user_id_c564eba6",
+          "columns": ["user_id"],
+          "isUnique": false
+        }
+      },
+      "foreignKeys": {
+        "django_admin_log_content_type_id_c4bce8eb_fk_django_co": {
+          "name": "django_admin_log_content_type_id_c4bce8eb_fk_django_co",
+          "tableFrom": "django_admin_log",
+          "tableTo": "django_content_type",
+          "columnsFrom": ["content_type_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "django_admin_log_user_id_c564eba6_fk_auth_user_id": {
+          "name": "django_admin_log_user_id_c564eba6_fk_auth_user_id",
+          "tableFrom": "django_admin_log",
+          "tableTo": "auth_user",
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    },
+    "data_access_activity": {
+      "name": "data_access_activity",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigserial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "course_id": {
+          "name": "course_id",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {
+        "data_access_activity_course_id_key": {
+          "name": "data_access_activity_course_id_key",
+          "columns": ["course_id"],
+          "isUnique": true
+        }
+      },
+      "foreignKeys": {
+        "data_access_activity_course_id_d9811eb6_fk_data_acce": {
+          "name": "data_access_activity_course_id_d9811eb6_fk_data_acce",
+          "tableFrom": "data_access_activity",
+          "tableTo": "data_access_course",
+          "columnsFrom": ["course_id"],
+          "columnsTo": ["id"],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}

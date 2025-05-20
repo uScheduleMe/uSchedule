@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Validate getFilterPayload() should return the correct data based on the input 1`] = `
+Object {
+  "allow_closed_components": true,
+  "allow_time_conflicts": "ALL",
+  "breaks": Array [],
+  "minimize_after_time": "22:00",
+  "minimize_before_time": "08:00",
+}
+`;
+
+exports[`Validate getFilterPayload() with breaks enabled should return the correct data based on the input 1`] = `
+Object {
+  "allow_closed_components": true,
+  "allow_time_conflicts": "ALL",
+  "breaks": Array [
+    Object {
+      "end": "13:30",
+      "size": "00:30",
+      "start": "11:00",
+    },
+    Object {
+      "end": "18:30",
+      "size": "00:30",
+      "start": "16:00",
+    },
+  ],
+  "minimize_after_time": "22:00",
+  "minimize_before_time": "08:00",
+}
+`;

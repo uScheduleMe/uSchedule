@@ -1,0 +1,118 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignInOptions should render properly with default inputs 1`] = `
+<div
+  className="sign-in-options-container"
+>
+  <Button
+    active={false}
+    className="d-block px-3 py-2 mb-3 btn-sign-in-facebook"
+    disabled={false}
+    key="facebook"
+    onClick={[Function]}
+    variant="sign-in"
+  >
+    <img
+      alt="account:sign_in_with-translated"
+      className="brand-icon mr-3"
+      src="/icon-facebook.svg"
+    />
+    account:sign_in_with-translated
+  </Button>
+  <Button
+    active={false}
+    className="d-block px-3 py-2 mb-3 btn-sign-in-google"
+    disabled={false}
+    key="google"
+    onClick={[Function]}
+    variant="sign-in"
+  >
+    <img
+      alt="account:sign_in_with-translated"
+      className="brand-icon mr-3"
+      src="/icon-google.svg"
+    />
+    account:sign_in_with-translated
+  </Button>
+  <Button
+    active={false}
+    className="d-block px-3 py-2 mb-0 btn-sign-in-microsoft"
+    disabled={false}
+    key="microsoft"
+    onClick={[Function]}
+    variant="sign-in"
+  >
+    <img
+      alt="account:sign_in_with-translated"
+      className="brand-icon mr-3"
+      src="/icon-microsoft.svg"
+    />
+    account:sign_in_with-translated
+  </Button>
+</div>
+`;
+
+exports[`SignInOptions should render properly with no providers 1`] = `
+<div
+  className="sign-in-options-container"
+/>
+`;
+
+exports[`SignInOptions should render properly with one provider 1`] = `
+<div
+  className="sign-in-options-container"
+>
+  <Button
+    active={false}
+    className="d-block px-3 py-2 mb-0 btn-sign-in-microsoft"
+    disabled={false}
+    key="microsoft"
+    onClick={[Function]}
+    variant="sign-in"
+  >
+    <img
+      alt="account:sign_in_with-translated"
+      className="brand-icon mr-3"
+      src="/icon-microsoft.svg"
+    />
+    account:sign_in_with-translated
+  </Button>
+</div>
+`;
+
+exports[`SignInOptions should render properly with two providers in the wrong order 1`] = `
+<div
+  className="sign-in-options-container"
+>
+  <Button
+    active={false}
+    className="d-block px-3 py-2 mb-3 btn-sign-in-google"
+    disabled={false}
+    key="google"
+    onClick={[Function]}
+    variant="sign-in"
+  >
+    <img
+      alt="account:sign_in_with-translated"
+      className="brand-icon mr-3"
+      src="/icon-google.svg"
+    />
+    account:sign_in_with-translated
+  </Button>
+  <Button
+    active={false}
+    className="d-block px-3 py-2 mb-0 btn-sign-in-microsoft"
+    disabled={false}
+    key="microsoft"
+    onClick={[Function]}
+    variant="sign-in"
+  >
+    <img
+      alt="account:sign_in_with-translated"
+      className="brand-icon mr-3"
+      src="/icon-microsoft.svg"
+    />
+    account:sign_in_with-translated
+  </Button>
+</div>
+`;

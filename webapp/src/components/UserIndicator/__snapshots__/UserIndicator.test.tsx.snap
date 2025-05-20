@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserIndicator should render properly 1`] = `
+<div
+  className="user-indicator"
+>
+  <OverlayTrigger
+    container={
+      Object {
+        "current": null,
+      }
+    }
+    defaultShow={false}
+    onToggle={[Function]}
+    overlay={
+      <ForwardRef(RenderUpdatingPopover)
+        id="user-indicator-menu"
+        style={
+          Object {
+            "maxWidth": "22rem",
+          }
+        }
+      >
+        <ForwardRef
+          className="p-0"
+        >
+          <SignInOptions
+            className="p-3"
+          />
+        </ForwardRef>
+      </ForwardRef(RenderUpdatingPopover)>
+    }
+    placement="bottom-end"
+    rootClose={true}
+    show={false}
+    trigger="click"
+  >
+    <Component />
+  </OverlayTrigger>
+</div>
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Danger should render properly 1`] = `
+<Fragment>
+  <ConfirmationModal
+    confirmButtonLabel="common:delete-translated"
+    confirmationMessage="account:delete_account_confirmation_prompt-translated"
+    onConfirm={[Function]}
+    onHide={[Function]}
+    show={false}
+    title="account:delete_account-translated"
+  />
+  <Card
+    body={false}
+  >
+    <CardHeader
+      as="h4"
+    >
+      common:danger-translated
+    </CardHeader>
+    <CardBody>
+      <p>
+        account:delete_account_explanation-translated
+      </p>
+      <Button
+        active={false}
+        data-cy="clk:delete-account"
+        disabled={false}
+        onClick={[Function]}
+        variant="outline-danger"
+      >
+        account:delete_account-translated
+      </Button>
+    </CardBody>
+  </Card>
+</Fragment>
+`;

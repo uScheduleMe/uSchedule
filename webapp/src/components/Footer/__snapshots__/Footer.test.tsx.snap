@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render properly 1`] = `
+<footer
+  className="bg-dark text-white-50"
+  id="page-footer"
+  itemProp="hasPart"
+  itemScope={true}
+  itemType="http://schema.org/WPFooter"
+>
+  <Container
+    fluid={false}
+  >
+    <Row
+      noGutters={false}
+    >
+      <Col
+        className="text-center text-sm-left mb-1"
+        sm={6}
+      >
+        <Link
+          className="footer-link text-light"
+          to="/info"
+        >
+          common:info-translated
+        </Link>
+         | 
+        <a
+          className="footer-link text-light c-pointer"
+          onClick={[Function]}
+        >
+          common:donate-translated
+        </a>
+         | 
+        <Link
+          className="footer-link text-light"
+          to="/feedback"
+        >
+          common:feedback-translated
+        </Link>
+      </Col>
+      <Col
+        className="text-center text-sm-right"
+        sm={6}
+      >
+        <span
+          className="footer-info"
+        >
+          © 
+          <n
+            ago={false}
+            calendar={false}
+            decimal={false}
+            element={null}
+            filter={[Function]}
+            format="YYYY"
+            fromNow={false}
+            interval={60000}
+            local={false}
+            onChange={[Function]}
+            titleFormat=""
+            toNow={false}
+            trim={false}
+            unit={null}
+            unix={false}
+            utc={false}
+            withTitle={false}
+          />
+           | uSchedule v
+          ci-test
+        </span>
+      </Col>
+    </Row>
+  </Container>
+</footer>
+`;

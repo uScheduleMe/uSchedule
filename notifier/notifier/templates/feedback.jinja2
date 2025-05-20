@@ -1,0 +1,19 @@
+{% include "header.jinja2" %}
+
+{% if metadata.name -%}
+Submitter name: {{ metadata.name|e }}
+{%- endif %}
+{% if metadata.email -%}
+Submitter email: {{ metadata.email|e }}
+{%- endif %}
+
+{% if metadata.subject|length -%}
+    uSchedule Feedback: {{ metadata.subject|e }}
+{%- else -%}
+    uSchedule Feedback
+{%- endif %}
+
+
+Feedback Message:
+
+{{ message|e }}

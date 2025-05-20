@@ -1,0 +1,13 @@
+.collapse-indicator {
+  transform: rotate(0deg);
+  transition: transform 0.35s linear;
+}
+
+.collapse-indicator.expanded {
+  transform: rotate(90deg);
+  transition: transform 0.35s linear;
+}
+
+.no-bullets {
+  list-style: none;
+}
